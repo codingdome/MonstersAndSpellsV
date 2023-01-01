@@ -8,4 +8,10 @@ public interface UserRepository {
 
     public int login(User user);
 
+    public User get(User user);
+
+    public User updateInformation(User user);
+
+    public User updateStats(User user);
+
 }

@@ -24,7 +24,8 @@ public class Main {
         Router router = new Router();
         router.addService("/users", new UserService());
         router.addService("/sessions", new SessionService());
-
+        router.addService("/users/kienboec", new UserService());
+        router.addService("/users/altenhof", new UserService());
         return router;
     }
 }

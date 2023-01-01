@@ -18,4 +18,16 @@ public class UserServiceImpl implements UserService {
         user.setToken("Basic " + user.getUsername() + "-mtcgToken");
         return userRepository.login(user);
     }
+
+    @Override
+    public User get(User user) {
+        return userRepository.get(user);
+    }
+
+    @Override
+    public int update(User user) {
+        userRepository.updateInformation(user);
+        userRepository.updateStats(user);
+        return 0;
+    }
 }

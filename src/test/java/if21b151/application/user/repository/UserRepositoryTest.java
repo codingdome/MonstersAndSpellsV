@@ -47,6 +47,51 @@ class UserRepositoryTest {
         Assertions.assertEquals(1, userRepository.login(user));
     }
 
+    @Test
+    void getUser() {
+        printService.consoleLog("unitTest", "UserRepository: Get User");
+        User user = new User("dominik", "password", "Dominik", "bio", ".-)", "token", 1000, 20, 0, 0);
+        userRepository.create(user);
+        userRepository.login(user);
+        printService.printUser(userRepository.get(user));
+        Assertions.assertEquals(1000, userRepository.get(user).getStats().getElo());
+    }
+
+    @Test
+    void updateUserInformation() {
+        printService.consoleLog("unitTest", "UserRepository: Update User Informations");
+        User user = new User();
+        user.setUsername("dominik");
+        user.setPassword("password");
+        user.setToken("token");
+        userRepository.create(user);
+        printService.printUser(userRepository.get(user));
+        user.setBio("bioText");
+        user.setImg(":-)");
+        user.setName("Dominik Englert");
+        printService.printUser(userRepository.updateInformation(user));
+        Assertions.assertEquals("bioText", userRepository.get(user).getBio());
+        Assertions.assertEquals(":-)", userRepository.get(user).getImg());
+    }
+
+    @Test
+    void updateUserStats() {
+        printService.consoleLog("unitTest", "UserRepository: Update User Stats");
+        User user = new User();
+        user.setUsername("dominik");
+        user.setPassword("password");
+        user.setToken("token");
+        userRepository.create(user);
+        printService.printUser(userRepository.get(user));
+        user.getStats().setLost(5);
+        user.getStats().setCoins(15);
+        user.getStats().setWon(2);
+        user.getStats().setElo(user.getStats().getElo() + 50);
+        userRepository.updateStats(user);
+        printService.printUser(userRepository.get(user));
+        Assertions.assertEquals(5, userRepository.get(user).getStats().getLost());
+    }
+
     @AfterEach
     void rollbackData() throws SQLException {
         DataBase.getConnection().rollback();

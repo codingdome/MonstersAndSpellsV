@@ -8,8 +8,6 @@ import org.junit.jupiter.api.*;
 
 import java.sql.SQLException;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class UserServiceTest {
     PrintService printService;
     UserService userService;
@@ -48,6 +46,63 @@ class UserServiceTest {
         user.setUsername("dominik");
         user.setPassword("wrongpassword");
         Assertions.assertEquals(1, userService.login(user));
+    }
+
+    @Test
+    void updateUserInformation() {
+        printService.consoleLog("unitTest", "UserService: Create And Update User");
+        User user = new User();
+        user.setUsername("dominik");
+        user.setPassword("password");
+        user.setToken("token");
+        userService.create(user);
+        printService.printUser(userService.get(user));
+        User user2 = new User();
+        user2.setName("Dominik Englert");
+        user2.setImg(":-)");
+        user2.setBio("biotext");
+        user2.setToken("token");
+        userService.update(user2);
+        printService.printUser(userService.get(user));
+        Assertions.assertEquals(":-)", userService.get(user).getImg());
+        Assertions.assertEquals("Dominik Englert", userService.get(user).getName());
+        Assertions.assertEquals("biotext", userService.get(user).getBio());
+    }
+
+    @Test
+    void updateUserStats() {
+        printService.consoleLog("unitTest", "UserService: Create And Update User Stats");
+        User user = new User();
+        user.setUsername("dominik");
+        user.setPassword("password");
+        user.setToken("token");
+        userService.create(user);
+        printService.printUser(userService.get(user));
+        User user2 = new User();
+        user2.setUsername("dominik");
+        user2.getStats().setElo(2000);
+        user2.getStats().setWon(10);
+        user2.getStats().setLost(20);
+        user2.getStats().setCoins(10);
+        userService.update(user2);
+        printService.printUser(userService.get(user));
+        Assertions.assertEquals(2000, userService.get(user).getStats().getElo());
+        Assertions.assertEquals(10, userService.get(user).getStats().getWon());
+        Assertions.assertEquals(20, userService.get(user).getStats().getLost());
+        Assertions.assertEquals(10, userService.get(user).getStats().getCoins());
+
+    }
+
+    @Test
+    void getUser() {
+        printService.consoleLog("unitTest", "UserService: Create And Get User");
+        User user = new User();
+        user.setUsername("dominik");
+        user.setPassword("password");
+        userService.create(user);
+        userService.login(user);
+        printService.printUser(userService.get(user));
+        Assertions.assertEquals("dominik", userService.get(user).getUsername());
     }
 
     @AfterEach

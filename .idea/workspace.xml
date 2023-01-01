@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_01">
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/user/service/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/curlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlScript.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" afterDir="false" />
@@ -13,11 +12,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/sessions/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/sessions/SessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/sessions/SessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/sessions/SessionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/if21b151/application/user/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/user/repository/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/if21b151/application/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/user/service/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,20 @@
       <recent name="if21b151.application.user.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Monsters And Spells V">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="if21b151.Main" />
+      <module name="Monsters And Spells V" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="if21b151.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in Monsters And Spells V" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <option name="PACKAGE_NAME" value="" />
@@ -100,7 +112,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryTest.createUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest.updateUserInformation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
@@ -110,29 +122,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="if21b151.application.user.repository" />
       <option name="MAIN_CLASS_NAME" value="if21b151.application.user.repository.UserRepositoryTest" />
-      <option name="METHOD_NAME" value="createUser" />
+      <option name="METHOD_NAME" value="updateUserInformation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryTest.loginUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Monsters And Spells V" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="if21b151.application.user.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.user.repository" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.repository.UserRepositoryTest" />
-      <option name="METHOD_NAME" value="loginUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.createUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
@@ -142,13 +138,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="if21b151.application.user.service" />
       <option name="MAIN_CLASS_NAME" value="if21b151.application.user.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="createUser" />
+      <option name="METHOD_NAME" value="getUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.loginUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.updateUserStats" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
@@ -158,7 +154,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="if21b151.application.user.service" />
       <option name="MAIN_CLASS_NAME" value="if21b151.application.user.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="loginUser" />
+      <option name="METHOD_NAME" value="updateUserStats" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserRepositoryTest.updateUserInformation" />
         <item itemvalue="JUnit.All in Monsters And Spells V" />
-        <item itemvalue="JUnit.UserServiceTest.loginUser" />
-        <item itemvalue="JUnit.UserServiceTest.createUser" />
-        <item itemvalue="JUnit.UserRepositoryTest.loginUser" />
-        <item itemvalue="JUnit.UserRepositoryTest.createUser" />
+        <item itemvalue="JUnit.UserServiceTest.getUser" />
+        <item itemvalue="JUnit.UserServiceTest.updateUserStats" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +178,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672579350025</updated>
-      <workItem from="1672579352333" duration="11529000" />
+      <workItem from="1672579352333" duration="21762000" />
     </task>
     <task id="LOCAL-00001" summary="2023_01_01">
       <created>1672598740658</created>
@@ -191,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672598740658</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2023_01_01">
+      <created>1672600762472</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672600762472</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

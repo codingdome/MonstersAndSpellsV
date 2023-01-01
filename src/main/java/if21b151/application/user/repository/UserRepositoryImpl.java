@@ -41,6 +41,86 @@ public class UserRepositoryImpl implements UserRepository {
         return 2;
     }
 
+    @Override
+    public User get(User user) {
+        String sql = """
+                select * from users inner join stats on users.username=stats.username where users.username=? AND token=?;
+                """;
+        try {
+            PreparedStatement statement = DataBase.getConnection().prepareStatement(sql);
+            statement.setString(1, user.getUsername());
+            statement.setString(2, user.getToken());
+            ResultSet results = statement.executeQuery();
+            while (results.next()) {
+                User userData = new User();
+                userData.setUsername(results.getString(1));
+                userData.setPassword(results.getString(2));
+                userData.setName(results.getString(3));
+                userData.setBio(results.getString(4));
+                userData.setImg(results.getString(5));
+                userData.setToken(results.getString(6));
+                userData.getStats().setElo(results.getInt(9));
+                userData.getStats().setCoins(results.getInt(10));
+                userData.getStats().setWon(results.getInt(11));
+                userData.getStats().setLost(results.getInt(12));
+                return userData;
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return null;
+    }
+
+    @Override
+    public User updateInformation(User user) {
+        String sql = """
+                update users set name = ?, bio = ?, img = ? where token=?
+                """;
+        try {
+            PreparedStatement statement = DataBase.getConnection().prepareStatement(sql);
+            statement.setString(1, user.getName());
+            statement.setString(2, user.getBio());
+            statement.setString(3, user.getImg());
+            statement.setString(4, user.getToken());
+            statement.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        String sql_stats = """
+                update stats set name = ? where username=?
+                """;
+
+        try {
+            PreparedStatement statement = DataBase.getConnection().prepareStatement(sql_stats);
+            statement.setString(1, user.getName());
+            statement.setString(2, user.getUsername());
+            statement.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return get(user);
+    }
+
+    @Override
+    public User updateStats(User user) {
+        String sql = """
+                update stats set elo = ?, coins = ?, won = ?, lost = ? where username=?
+                """;
+        try {
+            PreparedStatement statement = DataBase.getConnection().prepareStatement(sql);
+            statement.setInt(1, user.getStats().getElo());
+            statement.setInt(2, user.getStats().getCoins());
+            statement.setInt(3, user.getStats().getWon());
+            statement.setInt(4, user.getStats().getLost());
+            statement.setString(5, user.getUsername());
+            statement.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return get(user);
+    }
+
     /*helper function inserts in table users*/
     private void insertUser(User user) {
         String sql = """

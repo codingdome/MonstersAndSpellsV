@@ -18,23 +18,15 @@ public class UserService implements Service {
     @Override
     public Response handleRequest(Request request) {
 
-        if (request.getMethod() == Method.GET &&
-                request.getPathParts().size() > 1) {
-
-
+        if (request.getMethod() == Method.GET && request.getPathParts().size() > 1) {
+            return this.userController.getUser(request);
         } else if (request.getMethod() == Method.GET) {
-
-
+            return new Response(HttpStatus.BAD_REQUEST, ContentType.JSON, "{ \"message\" : \"Missing substring.\" }");
         } else if (request.getMethod() == Method.PUT) {
-
-
+            return this.userController.updateUser(request);
         } else if (request.getMethod() == Method.POST) {
             return this.userController.createUser(request);
         }
-        return new Response(
-                HttpStatus.BAD_REQUEST,
-                ContentType.JSON,
-                "{ \"message\" : \"No Method detected.\" }"
-        );
+        return new Response(HttpStatus.BAD_REQUEST, ContentType.JSON, "{ \"message\" : \"No Method detected.\" }");
     }
 }
