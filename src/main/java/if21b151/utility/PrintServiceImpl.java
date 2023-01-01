@@ -9,6 +9,9 @@ public class PrintServiceImpl implements PrintService {
             case "unitTest":
                 System.out.println(ANSI_CYAN + position.toUpperCase() + ANSI_RESET + " " + message);
                 break;
+
+            case "server":
+                System.out.println(ANSI_MAGENTA + position.toUpperCase() + ANSI_RESET + " operation: " + message);
             default:
                 break;
         }

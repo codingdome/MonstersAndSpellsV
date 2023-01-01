@@ -19,6 +19,29 @@ public class UserRepositoryImpl implements UserRepository {
         return 1;
     }
 
+    @Override
+    public int login(User user) {
+        if (!userExists(user)) {
+            return 0;
+        }
+        if (!userPassword(user)) {
+            return 1;
+        }
+        String sql = """
+                update users set token=? where username=?
+                """;
+        try {
+            PreparedStatement statement = DataBase.getConnection().prepareStatement(sql);
+            statement.setString(1, user.getToken());
+            statement.setString(2, user.getUsername());
+            statement.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return 2;
+    }
+
+    /*helper function inserts in table users*/
     private void insertUser(User user) {
         String sql = """
                 insert into users (username,password,name,bio,img,token) values(?,?,?,?,?,?)
@@ -38,6 +61,7 @@ public class UserRepositoryImpl implements UserRepository {
         }
     }
 
+    /*helper function (inserts in table stats)*/
     private void insertStats(User user) {
         String sql = """
                 insert into stats (username,name,elo,coins,won,lost) values(?,?,?,?,?,?)
@@ -55,6 +79,7 @@ public class UserRepositoryImpl implements UserRepository {
             throw new RuntimeException(e);
         }
     }
+
 
     /*helper function (return true if userExists)*/
     boolean userExists(User user) {

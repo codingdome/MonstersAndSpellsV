@@ -12,4 +12,10 @@ public class UserServiceImpl implements UserService {
     public int create(User user) {
         return userRepository.create(user);
     }
+
+    @Override
+    public int login(User user) {
+        user.setToken("Basic " + user.getUsername() + "-mtcgToken");
+        return userRepository.login(user);
+    }
 }

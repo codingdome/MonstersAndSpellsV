@@ -4,42 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/curlScript.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/model/Stats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/http/ContentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/http/HttpStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/http/Method.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/HeaderMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/echo/EchoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/sessions/SessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/sessions/SessionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/utils/RequestBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/utils/RequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/utils/Router.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/user/model/UserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/user/repository/UserRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/server/RequestTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/utils/RequestBuilderTest.java" afterDir="false" />
+    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_01">
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/user/service/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/database/AbstractDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/database/AbstractDataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/database/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/database/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlScript.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/sessions/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/sessions/SessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/sessions/SessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/sessions/SessionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/if21b151/application/user/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/user/repository/UserRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +81,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="if21b151.application.user.service" />
       <recent name="if21b151.application.user.repository" />
       <recent name="if21b151.application.user.model" />
       <recent name="if21b151.httpserver.utils" />
@@ -137,48 +116,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest.loginUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="if21b151.application.user.model.*" />
+          <option name="PATTERN" value="if21b151.application.user.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.user.model" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.model.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.testConstructNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Monsters And Spells V" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="if21b151.application.user.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.user.model" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.model.UserTest" />
-      <option name="METHOD_NAME" value="testConstructNewUser" />
+      <option name="PACKAGE_NAME" value="if21b151.application.user.repository" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.repository.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="loginUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.testConstructSpecificUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.createUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="if21b151.application.user.model.*" />
+          <option name="PATTERN" value="if21b151.application.user.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.user.model" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.model.UserTest" />
-      <option name="METHOD_NAME" value="testConstructSpecificUser" />
+      <option name="PACKAGE_NAME" value="if21b151.application.user.service" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="createUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.loginUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monsters And Spells V" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="if21b151.application.user.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="if21b151.application.user.service" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="loginUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,10 +167,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in Monsters And Spells V" />
+        <item itemvalue="JUnit.UserServiceTest.loginUser" />
+        <item itemvalue="JUnit.UserServiceTest.createUser" />
+        <item itemvalue="JUnit.UserRepositoryTest.loginUser" />
         <item itemvalue="JUnit.UserRepositoryTest.createUser" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.UserTest.testConstructSpecificUser" />
-        <item itemvalue="JUnit.UserTest.testConstructNewUser" />
       </list>
     </recent_temporary>
   </component>
@@ -202,8 +182,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672579350025</updated>
-      <workItem from="1672579352333" duration="9665000" />
+      <workItem from="1672579352333" duration="11529000" />
     </task>
+    <task id="LOCAL-00001" summary="2023_01_01">
+      <created>1672598740658</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672598740658</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,5 +207,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2023_01_01" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023_01_01" />
   </component>
 </project>

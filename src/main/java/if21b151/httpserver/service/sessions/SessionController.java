@@ -1,42 +1,48 @@
 package if21b151.httpserver.service.sessions;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import httpserver.http.ContentType;
-import httpserver.http.HttpStatus;
-import httpserver.server.Controller;
-import httpserver.server.Request;
-import httpserver.server.Response;
-import user.model.User;
-import user.repository.UserRepository;
+
+import if21b151.application.user.model.User;
+import if21b151.application.user.service.UserService;
+import if21b151.application.user.service.UserServiceImpl;
+import if21b151.httpserver.http.ContentType;
+import if21b151.httpserver.http.HttpStatus;
+import if21b151.httpserver.server.Controller;
+import if21b151.httpserver.server.Request;
+import if21b151.httpserver.server.Response;
+import if21b151.utility.PrintService;
+import if21b151.utility.PrintServiceImpl;
+
 
 public class SessionController extends Controller {
 
-    UserRepository userRepository;
+    UserService userService;
+    PrintService printService;
 
-    public SessionController(UserRepository userRepository) {
-        this.userRepository = userRepository;
+    public SessionController(UserService userService) {
+        this.userService = userService;
+        this.printService = new PrintServiceImpl();
     }
 
     public Response loginUser(Request request) {
         try {
             User user = this.getObjectMapper().readValue(request.getBody(), User.class);
-            user.setToken("Basic " + user.getUsername() + "-mtcgToken");
-            int status = this.userRepository.login(user);
+
+            int status = this.userService.login(user);
             String userDataJSON = this.getObjectMapper().writeValueAsString(user);
 
             switch (status) {
                 case 0:
-                    System.out.println("loginUser: user does not exist");
-                    return new Response(HttpStatus.BAD_REQUEST, ContentType.JSON, "No User Found");
+                    printService.consoleLog("server", "Login - user does not exist");
+                    return new Response(HttpStatus.BAD_REQUEST, ContentType.JSON, "No User Found.");
                 case 1:
-                    System.out.println("loginUser: wrong password");
-                    return new Response(HttpStatus.BAD_REQUEST, ContentType.JSON, "Wrong Password -- ");
+                    printService.consoleLog("server", "Login - wrong password");
+                    return new Response(HttpStatus.BAD_REQUEST, ContentType.JSON, "Wrong Password.");
                 case 2:
-                    System.out.println("loginUser: successfully logged in");
+                    printService.consoleLog("server", "Login successful.");
                     return new Response(HttpStatus.ACCEPTED, ContentType.JSON, "Successfully logged in -- " + userDataJSON);
             }
             return new Response(HttpStatus.NOT_FOUND, ContentType.JSON, "No DB Connection -- " + userDataJSON);
-
 
         } catch (JsonProcessingException e) {
             e.printStackTrace();

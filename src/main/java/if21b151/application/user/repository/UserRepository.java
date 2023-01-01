@@ -6,4 +6,6 @@ public interface UserRepository {
 
     public int create(User user);
 
+    public int login(User user);
+
 }

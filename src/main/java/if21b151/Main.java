@@ -1,6 +1,7 @@
 package if21b151;
 
 import if21b151.httpserver.server.Server;
+import if21b151.httpserver.service.sessions.SessionService;
 import if21b151.httpserver.service.users.UserService;
 import if21b151.httpserver.utils.Router;
 import if21b151.utility.PrintService;
@@ -22,6 +23,7 @@ public class Main {
     private static Router configureRouter() {
         Router router = new Router();
         router.addService("/users", new UserService());
+        router.addService("/sessions", new SessionService());
 
         return router;
     }

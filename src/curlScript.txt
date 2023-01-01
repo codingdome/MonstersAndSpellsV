@@ -1,38 +1,37 @@
 
 1) create users
 curl -X POST http://localhost:12345/users --header "Content-Type: application/json" -d "{\"username\":\"kienboec\", \"password\":\"daniel\"}"
-
 curl -X POST http://localhost:12345/users --header "Content-Type: application/json" -d "{\"username\":\"altenhof\", \"password\":\"markus\"}"
-
 curl -X POST http://localhost:12345/users --header "Content-Type: application/json" -d "{\"username\":\"admin\", \"password\":\"istrator\"}"
 
 --user exists -> should fail
-
 curl -X POST http://localhost:12345/users --header "Content-Type: application/json" -d "{\"username\":\"admin\", \"password\":\"ololo\"}"
 
 2) login users
-curl -X POST http://localhost:10002/sessions --header "Content-Type: application/json" -d "{\"username\":\"kienboec\", \"password\":\"daniel\"}"
+curl -X POST http://localhost:12345/sessions --header "Content-Type: application/json" -d "{\"username\":\"kienboec\", \"password\":\"daniel\"}"
+curl -X POST http://localhost:12345/sessions --header "Content-Type: application/json" -d "{\"username\":\"altenhof\", \"password\":\"markus\"}"
+curl -X POST http://localhost:12345/sessions --header "Content-Type: application/json" -d "{\"username\":\"admin\", \"password\":\"istrator\"}"
 
-curl -X POST http://localhost:10002/sessions --header "Content-Type: application/json" -d "{\"username\":\"altenhof\", \"password\":\"markus\"}"
-
-curl -X POST http://localhost:10002/sessions --header "Content-Type: application/json" -d "{\"username\":\"admin\", \"password\":\"istrator\"}"
+--wrong pw / no user found -> should fail
+curl -X POST http://localhost:12345/sessions --header "Content-Type: application/json" -d "{\"username\":\"admin\", \"password\":\"pupu\"}"
+curl -X POST http://localhost:12345/sessions --header "Content-Type: application/json" -d "{\"username\":\"lulu\", \"password\":\"istrator\"}"
 
 3) create package by Admin
-curl -X POST http://localhost:10002/packages --header "Content-Type: application/json" --header "Authorization: Basic admin-mtcgToken" -d "[{\"id\":\"845f0dc7-37d0-426e-994e-43fc3ac83c08\", \"name\":\"WaterGoblin\", \"damage\":10.0}, {\"id\":\"99f8f8dc-e25e-4a95-aa2c-782823f36e2a\", \"name\":\"Dragon\",\"damage\": 50.0}, {\"id\":\"e85e3976-7c86-4d06-9a80-641c2019a79f\", \"name\":\"WaterSpell\", \"damage\": 20.0}, {\"id\":\"1cb6ab86-bdb2-47e5-b6e4-68c5ab389334\", \"name\":\"Ork\", \"damage\": 45.0}, {\"id\":\"dfdd758f-649c-40f9-ba3a-8657f4b3439f\", \"name\":\"FireSpell\", \"damage\":25.0}]"
+curl -X POST http://localhost:12345/packages --header "Content-Type: application/json" --header "Authorization: Basic admin-mtcgToken" -d "[{\"id\":\"845f0dc7-37d0-426e-994e-43fc3ac83c08\", \"name\":\"WaterGoblin\", \"damage\":10.0}, {\"id\":\"99f8f8dc-e25e-4a95-aa2c-782823f36e2a\", \"name\":\"Dragon\",\"damage\": 50.0}, {\"id\":\"e85e3976-7c86-4d06-9a80-641c2019a79f\", \"name\":\"WaterSpell\", \"damage\": 20.0}, {\"id\":\"1cb6ab86-bdb2-47e5-b6e4-68c5ab389334\", \"name\":\"Ork\", \"damage\": 45.0}, {\"id\":\"dfdd758f-649c-40f9-ba3a-8657f4b3439f\", \"name\":\"FireSpell\", \"damage\":25.0}]"
 
 14) edit user data
-curl -X GET http://localhost:10002/users/kienboec --header "Authorization: Basic kienboec-mtcgToken"
+curl -X GET http://localhost:12345/users/kienboec --header "Authorization: Basic kienboec-mtcgToken"
 
-curl -X GET http://localhost:10002/users/altenhof --header "Authorization: Basic altenhof-mtcgToken"
+curl -X GET http://localhost:12345/users/altenhof --header "Authorization: Basic altenhof-mtcgToken"
 
-curl -X PUT http://localhost:10002/users/kienboec --header "Content-Type: application/json" --header "Authorization: Basic kienboec-mtcgToken" -d "{\"name\": \"Kienboeck\",  \"bio\": \"me playin...\", \"img\": \":-)\"}"
+curl -X PUT http://localhost:12345/users/kienboec --header "Content-Type: application/json" --header "Authorization: Basic kienboec-mtcgToken" -d "{\"name\": \"Kienboeck\",  \"bio\": \"me playin...\", \"img\": \":-)\"}"
 
-curl -X PUT http://localhost:10002/users/altenhof --header "Content-Type: application/json" --header "Authorization: Basic altenhof-mtcgToken" -d "{\"name\": \"Altenhofer\", \"bio\": \"me codin...\",  \"img\": \":-D\"}"
+curl -X PUT http://localhost:12345/users/altenhof --header "Content-Type: application/json" --header "Authorization: Basic altenhof-mtcgToken" -d "{\"name\": \"Altenhofer\", \"bio\": \"me codin...\",  \"img\": \":-D\"}"
 
 should fail:
-curl -X GET http://localhost:10002/users/altenhof --header "Authorization: Basic kienboec-mtcgToken"
+curl -X GET http://localhost:12345/users/altenhof --header "Authorization: Basic kienboec-mtcgToken"
 
-curl -X GET http://localhost:10002/users/kienboec --header "Authorization: Basic altenhof-mtcgToken"
+curl -X GET http://localhost:12345/users/kienboec --header "Authorization: Basic altenhof-mtcgToken"
 
 15) stats
 
