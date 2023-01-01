@@ -4,17 +4,67 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="" />
+    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/curlScript.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/model/Stats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/http/ContentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/http/HttpStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/http/Method.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/HeaderMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/echo/EchoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/sessions/SessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/sessions/SessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/utils/RequestBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/utils/RequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/utils/Router.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/user/model/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/user/repository/UserRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/server/RequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/utils/RequestBuilderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/database/AbstractDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/database/AbstractDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/database/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/database/DataBase.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2Jj6s3SoM0IsrgXepziSF5FOWru" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,9 +73,127 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/Users/dominikenglert/IdeaProjects/Monsters And Spells V/src/main/java/if21b151/httpserver/service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service" />
+      <recent name="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository" />
+      <recent name="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users" />
+      <recent name="$PROJECT_DIR$/src/main/java/if21b151" />
+      <recent name="$PROJECT_DIR$/src/main/java/if21b151/database" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="if21b151.application.user.repository" />
+      <recent name="if21b151.application.user.model" />
+      <recent name="if21b151.httpserver.utils" />
+      <recent name="if21b151.httpserver.server" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="if21b151.application.user.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in Monsters And Spells V">
+    <configuration name="All in Monsters And Spells V" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monsters And Spells V" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.createUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monsters And Spells V" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="if21b151.application.user.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="if21b151.application.user.repository" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.repository.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="createUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monsters And Spells V" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="if21b151.application.user.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="if21b151.application.user.model" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.model.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.testConstructNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monsters And Spells V" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="if21b151.application.user.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="if21b151.application.user.model" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.model.UserTest" />
+      <option name="METHOD_NAME" value="testConstructNewUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.testConstructSpecificUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monsters And Spells V" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="if21b151.application.user.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="if21b151.application.user.model" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.model.UserTest" />
+      <option name="METHOD_NAME" value="testConstructSpecificUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in Monsters And Spells V" />
+        <item itemvalue="JUnit.UserRepositoryTest.createUser" />
+        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.UserTest.testConstructSpecificUser" />
+        <item itemvalue="JUnit.UserTest.testConstructNewUser" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -34,8 +202,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672579350025</updated>
+      <workItem from="1672579352333" duration="9665000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -1,4 +1,4 @@
-package database;
+package if21b151.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -13,7 +13,7 @@ public class DataBase extends AbstractDataBase {
         if (_connection == null) {
             try {
                 //link zur Datenbank inkl port und datenbank name (egal in welchem img)
-                openConnection("jdbc:postgresql://localhost:5432/monsterDB2", "postgres", "password");
+                openConnection("jdbc:postgresql://localhost:5432/monsterDB3", "postgres", "password");
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
