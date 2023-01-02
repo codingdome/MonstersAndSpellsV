@@ -26,10 +26,34 @@ public class Card {
         this.trade = trade;
     }
 
+    public Card(String id, String name, String username, double damage) {
+        this.id = id;
+        this.name = name;
+        this.damage = damage;
+        this.username = username;
+        String[] nameToArray = this.name.split("(?=\\p{Lu})");
+
+        if (nameToArray.length == 1) {
+            this.type = "monster";
+            this.monsterType = stringToMonsterType(nameToArray[0]);
+            this.elementType = getRandomElementType();
+        } else {
+            this.elementType = stringToElementType(nameToArray[0]);
+            if (Objects.equals(nameToArray[1], "Spell")) {
+                type = "spell";
+                monsterType = MonsterType.SPELL;
+            } else {
+                type = "monster";
+                monsterType = stringToMonsterType(nameToArray[1]);
+            }
+        }
+    }
+
     public Card(String id, String name, double damage) {
         this.id = id;
         this.name = name;
         this.damage = damage;
+        this.username = "unallocated";
         String[] nameToArray = this.name.split("(?=\\p{Lu})");
 
         if (nameToArray.length == 1) {

@@ -6,6 +6,9 @@ import if21b151.application.card.model.ElementType;
 import if21b151.application.card.model.MonsterType;
 import if21b151.application.card.repository.CardRepository;
 import if21b151.application.card.repository.CardRepositoryImpl;
+import if21b151.application.user.model.User;
+
+import java.util.List;
 
 public class CardServiceImpl implements CardService {
 
@@ -25,6 +28,22 @@ public class CardServiceImpl implements CardService {
         cardRepository.addNewPackage(cardPackage);
         return cardPackage;
     }
+
+    @Override
+    public int acquirePackage(User user) {
+        return cardRepository.acquirePackage(user);
+    }
+
+    @Override
+    public List<Card> getAllUserCards(User user) {
+        return cardRepository.getAllCardsByUsername(user.getUsername());
+    }
+
+    @Override
+    public List<Card> getUserDeck(User user) {
+        return cardRepository.getUserDeckCards(user.getUsername());
+    }
+
 
     @Override
     public Card getPlotCard() {

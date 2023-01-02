@@ -28,6 +28,9 @@ public class Main {
         router.addService("/users/altenhof", new UserService());
         router.addService("/stats", new StatsService());
         router.addService("/packages", new CardService());
+        router.addService("/transactions", new CardService());
+        router.addService("/cards", new CardService());
+        router.addService("/deck", new CardService());
         return router;
     }
 }

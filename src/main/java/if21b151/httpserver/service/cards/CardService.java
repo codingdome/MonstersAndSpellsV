@@ -8,6 +8,8 @@ import if21b151.httpserver.server.Request;
 import if21b151.httpserver.server.Response;
 import if21b151.httpserver.server.Service;
 
+import java.util.Objects;
+
 public class CardService implements Service {
     private final CardController cardController;
 
@@ -17,11 +19,21 @@ public class CardService implements Service {
 
     @Override
     public Response handleRequest(Request request) {
+
         if (request.getMethod() == Method.GET && request.getPathParts().size() > 1) {
 
 
-        } else if (request.getMethod() == Method.GET) {
+        } else if (request.getMethod() == Method.GET && Objects.equals(request.getPathParts().get(0), "cards")) {
 
+            return this.cardController.getAllUserCards(request);
+
+        } else if (request.getMethod() == Method.GET && Objects.equals(request.getPathParts().get(0), "deck")) {
+
+            return this.cardController.getUserDeck(request);
+
+        } else if (request.getMethod() == Method.POST && request.getPathParts().size() > 1) {
+
+            return this.cardController.acquirePackage(request);
 
         } else if (request.getMethod() == Method.POST) {
 

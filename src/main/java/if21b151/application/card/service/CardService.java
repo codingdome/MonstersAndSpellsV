@@ -2,6 +2,9 @@ package if21b151.application.card.service;
 
 import if21b151.application.card.model.Card;
 import if21b151.application.card.model.CardPackage;
+import if21b151.application.user.model.User;
+
+import java.util.List;
 
 public interface CardService {
 
@@ -10,5 +13,11 @@ public interface CardService {
     public CardPackage cardsToCardPackage(Card[] cards);
 
     public CardPackage addNewPackage(CardPackage cardPackage);
+
+    public int acquirePackage(User user);
+
+    public List<Card> getAllUserCards(User user);
+
+    public List<Card> getUserDeck(User user);
 
 }

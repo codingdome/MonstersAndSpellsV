@@ -5,32 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_02">
-      <change afterPath="$PROJECT_DIR$/src/curlResponse.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/CardPackage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/ElementType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/MonsterType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/stats/StatsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/stats/StatsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/card/model/CardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/card/repository/CardRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/card/service/CardServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curlResponse.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlResponse.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/curlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlScript.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/if21b151/application/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/user/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,9 +163,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in Monsters And Spells V" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CardRepositoryTest.testAddNewPackage" />
         <item itemvalue="JUnit.CardServiceTest.testCreatePackage" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CardRepositoryTest.testCountPackages" />
       </list>
     </recent_temporary>
@@ -193,7 +178,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672579350025</updated>
-      <workItem from="1672579352333" duration="35106000" />
+      <workItem from="1672579352333" duration="47720000" />
     </task>
     <task id="LOCAL-00001" summary="2023_01_01">
       <created>1672598740658</created>
@@ -216,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672615492777</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2023_01_02">
+      <created>1672674976587</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672674976587</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
