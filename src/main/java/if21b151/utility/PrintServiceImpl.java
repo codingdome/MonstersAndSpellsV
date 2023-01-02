@@ -1,5 +1,6 @@
 package if21b151.utility;
 
+import if21b151.application.card.model.Card;
 import if21b151.application.user.model.User;
 
 public class PrintServiceImpl implements PrintService {
@@ -19,7 +20,7 @@ public class PrintServiceImpl implements PrintService {
 
     @Override
     public void printUser(User user) {
-        System.out.println(ANSI_MAGENTA + "PRINTUSER " + user.getUsername().toUpperCase() + ANSI_RESET);
+        System.out.println(ANSI_MAGENTA + "PRINTUSER: " + user.getUsername().toUpperCase() + ANSI_RESET);
         if (user == null) {
             return;
         }
@@ -28,6 +29,30 @@ public class PrintServiceImpl implements PrintService {
         table[1] = new String[]{user.getUsername(), user.getPassword(), user.getName(), user.getBio(), user.getImg(), user.getToken(), Integer.toString(user.getStats().getElo()), Integer.toString(user.getStats().getCoins()), Integer.toString(user.getStats().getWon()), Integer.toString(user.getStats().getLost())};
         for (final Object[] row : table) {
             System.out.format("%-20s%-20s%-20s%-20s%-10s%-30s%-10s%-10s%-10s%-10s%n", row);
+        }
+    }
+
+    @Override
+    public void printCard(Card card) {
+        System.out.println(ANSI_MAGENTA + "PRINTCARD: " + card.getName().toUpperCase() + ANSI_RESET);
+        if (card == null) {
+            return;
+        }
+        final Object[][] table = new String[2][];
+        table[0] = new String[]{"id", "name", "username", "type", "damage", "elementType", "monsterType", "deck", "trade"};
+
+        String monsterType;
+        if (card.getType().equals("spell")) {
+            monsterType = "-";
+        } else {
+            monsterType = card.getMonsterType().toString();
+        }
+
+        table[1] = new String[]{card.getId(), card.getName(), card.getUsername(), card.getType(), Double.toString(card.getDamage()), card.getElementType().toString(), card.getMonsterType().toString(), Integer.toString(card.getDeck()), Integer.toString(card.getTrade())};
+
+
+        for (final Object[] row : table) {
+            System.out.format("%-40s%-15s%-15s%-15s%-15s%-15s%-15s%-10s%-10s%n", row);
         }
     }
 }

@@ -1,5 +1,6 @@
 package if21b151.application.user.repository;
 
+import if21b151.application.user.model.Stats;
 import if21b151.application.user.model.User;
 import if21b151.database.DataBase;
 
@@ -64,6 +65,32 @@ public class UserRepositoryImpl implements UserRepository {
                 userData.getStats().setWon(results.getInt(11));
                 userData.getStats().setLost(results.getInt(12));
                 return userData;
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return null;
+    }
+
+    @Override
+    public Stats getStats(String username) {
+        String sql = """
+                select * from stats where username = ?;
+                """;
+        try {
+            PreparedStatement statement = DataBase.getConnection().prepareStatement(sql);
+            statement.setString(1, username);
+            ResultSet results = statement.executeQuery();
+
+            while (results.next()) {
+                Stats stats = new Stats();
+                stats.setUsername(results.getString(1));
+                stats.setName(results.getString(2));
+                stats.setElo(results.getInt(3));
+                stats.setCoins(results.getInt(4));
+                stats.setWon(results.getInt(5));
+                stats.setLost(results.getInt(6));
+                return stats;
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);

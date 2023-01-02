@@ -90,7 +90,6 @@ class UserServiceTest {
         Assertions.assertEquals(10, userService.get(user).getStats().getWon());
         Assertions.assertEquals(20, userService.get(user).getStats().getLost());
         Assertions.assertEquals(10, userService.get(user).getStats().getCoins());
-
     }
 
     @Test

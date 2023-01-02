@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_01">
+    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_02">
+      <change afterPath="$PROJECT_DIR$/src/curlResponse.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/CardPackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/ElementType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/MonsterType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/stats/StatsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/stats/StatsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/card/model/CardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/card/repository/CardRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/card/service/CardServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/curlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlScript.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" afterDir="false" />
@@ -12,10 +28,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/if21b151/application/user/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/user/repository/UserRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/if21b151/application/user/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/user/service/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,23 +68,24 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/dominikenglert/IdeaProjects/Monsters And Spells V/src/main/java/if21b151/httpserver/service",
+    "last_opened_file_path": "/Users/dominikenglert/IdeaProjects/Monsters And Spells V/src/main/java/if21b151/application/card/repository",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.file-colors"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository" />
+      <recent name="$PROJECT_DIR$/src/main/java/if21b151/application/card/service" />
+      <recent name="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards" />
+      <recent name="$PROJECT_DIR$/src/main/java/if21b151/application/card/model" />
       <recent name="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service" />
-      <recent name="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository" />
-      <recent name="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users" />
-      <recent name="$PROJECT_DIR$/src/main/java/if21b151" />
-      <recent name="$PROJECT_DIR$/src/main/java/if21b151/database" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -80,17 +95,17 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="if21b151.application.card.repository" />
+      <recent name="if21b151.application.card.service" />
+      <recent name="if21b151.application.card.model" />
       <recent name="if21b151.application.user.service" />
       <recent name="if21b151.application.user.repository" />
-      <recent name="if21b151.application.user.model" />
-      <recent name="if21b151.httpserver.utils" />
-      <recent name="if21b151.httpserver.server" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="if21b151.application.user.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.All in Monsters And Spells V">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="if21b151.Main" />
       <module name="Monsters And Spells V" />
@@ -112,49 +127,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryTest.updateUserInformation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CardRepositoryTest.testAddNewPackage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="if21b151.application.user.repository.*" />
+          <option name="PATTERN" value="if21b151.application.card.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.user.repository" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.repository.UserRepositoryTest" />
-      <option name="METHOD_NAME" value="updateUserInformation" />
+      <option name="PACKAGE_NAME" value="if21b151.application.card.repository" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.card.repository.CardRepositoryTest" />
+      <option name="METHOD_NAME" value="testAddNewPackage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CardRepositoryTest.testCountPackages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="if21b151.application.user.service.*" />
+          <option name="PATTERN" value="if21b151.application.card.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.user.service" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="getUser" />
+      <option name="PACKAGE_NAME" value="if21b151.application.card.repository" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.card.repository.CardRepositoryTest" />
+      <option name="METHOD_NAME" value="testCountPackages" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.updateUserStats" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CardServiceTest.testCreatePackage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="if21b151.application.user.service.*" />
+          <option name="PATTERN" value="if21b151.application.card.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.user.service" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="updateUserStats" />
+      <option name="PACKAGE_NAME" value="if21b151.application.card.service" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.card.service.CardServiceTest" />
+      <option name="METHOD_NAME" value="testCreatePackage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.UserRepositoryTest.updateUserInformation" />
         <item itemvalue="JUnit.All in Monsters And Spells V" />
-        <item itemvalue="JUnit.UserServiceTest.getUser" />
-        <item itemvalue="JUnit.UserServiceTest.updateUserStats" />
+        <item itemvalue="JUnit.CardRepositoryTest.testAddNewPackage" />
+        <item itemvalue="JUnit.CardServiceTest.testCreatePackage" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CardRepositoryTest.testCountPackages" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +193,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672579350025</updated>
-      <workItem from="1672579352333" duration="21762000" />
+      <workItem from="1672579352333" duration="35106000" />
     </task>
     <task id="LOCAL-00001" summary="2023_01_01">
       <created>1672598740658</created>
@@ -194,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672600762472</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2023_01_02">
+      <created>1672615492777</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672615492777</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +235,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2023_01_01" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023_01_01" />
+    <MESSAGE value="2023_01_02" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023_01_02" />
   </component>
 </project>

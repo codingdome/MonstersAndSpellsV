@@ -1,0 +1,16 @@
+package if21b151.application.card.repository;
+
+import if21b151.application.card.model.Card;
+import if21b151.application.card.model.CardPackage;
+import if21b151.application.user.model.User;
+
+import java.util.List;
+
+public interface CardRepository {
+
+    public int countPackages();
+
+    public void addNewPackage(CardPackage cardPackage);
+    
+}
+

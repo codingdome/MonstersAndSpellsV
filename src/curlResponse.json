@@ -1,0 +1,60 @@
+{
+  "price": 5,
+  "packageCards": [
+    {
+      "id": "845f0dc7-37d0-426e-994e-43fc3ac83c08",
+      "name": "WaterGoblin",
+      "username": "unallocated",
+      "type": "monster",
+      "damage": 10.0,
+      "elementType": "WATER",
+      "monsterType": "SPELL",
+      "deck": 0,
+      "trade": 0
+    },
+    {
+      "id": "99f8f8dc-e25e-4a95-aa2c-782823f36e2a",
+      "name": "Dragon",
+      "username": "unallocated",
+      "type": "monster",
+      "damage": 50.0,
+      "elementType": "REGULAR",
+      "monsterType": "SPELL",
+      "deck": 0,
+      "trade": 0
+    },
+    {
+      "id": "e85e3976-7c86-4d06-9a80-641c2019a79f",
+      "name": "WaterSpell",
+      "username": "unallocated",
+      "type": "monster",
+      "damage": 20.0,
+      "elementType": "WATER",
+      "monsterType": "SPELL",
+      "deck": 0,
+      "trade": 0
+    },
+    {
+      "id": "1cb6ab86-bdb2-47e5-b6e4-68c5ab389334",
+      "name": "Ork",
+      "username": "unallocated",
+      "type": "monster",
+      "damage": 45.0,
+      "elementType": "WATER",
+      "monsterType": "SPELL",
+      "deck": 0,
+      "trade": 0
+    },
+    {
+      "id": "dfdd758f-649c-40f9-ba3a-8657f4b3439f",
+      "name": "FireSpell",
+      "username": "unallocated",
+      "type": "monster",
+      "damage": 25.0,
+      "elementType": "REGULAR",
+      "monsterType": "SPELL",
+      "deck": 0,
+      "trade": 0
+    }
+  ]
+}

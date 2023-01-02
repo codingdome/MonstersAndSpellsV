@@ -1,11 +1,11 @@
 package if21b151;
 
 import if21b151.httpserver.server.Server;
+import if21b151.httpserver.service.cards.CardService;
 import if21b151.httpserver.service.sessions.SessionService;
+import if21b151.httpserver.service.stats.StatsService;
 import if21b151.httpserver.service.users.UserService;
 import if21b151.httpserver.utils.Router;
-import if21b151.utility.PrintService;
-import if21b151.utility.PrintServiceImpl;
 
 import java.io.IOException;
 
@@ -26,6 +26,8 @@ public class Main {
         router.addService("/sessions", new SessionService());
         router.addService("/users/kienboec", new UserService());
         router.addService("/users/altenhof", new UserService());
+        router.addService("/stats", new StatsService());
+        router.addService("/packages", new CardService());
         return router;
     }
 }
