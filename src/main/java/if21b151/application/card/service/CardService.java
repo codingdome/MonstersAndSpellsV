@@ -22,4 +22,8 @@ public interface CardService {
 
     public int configureDeck(User user, List<String> cardIDs);
 
+    public void updateCardOwner(Card card, User user);
+
+    public void deleteCardFromDeck(Card card);
+
 }

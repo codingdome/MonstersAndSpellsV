@@ -50,6 +50,16 @@ public class CardServiceImpl implements CardService {
     }
 
     @Override
+    public void updateCardOwner(Card card, User user) {
+        cardRepository.updateCardOwner(card, user);
+    }
+
+    @Override
+    public void deleteCardFromDeck(Card card) {
+        cardRepository.deleteCardFromDeck(card);
+    }
+
+    @Override
     public Card getPlotCard() {
         return new Card("0", "0", "0", "0", 0, ElementType.WATER, MonsterType.ELVE, 0, 0);
     }

@@ -52,6 +52,11 @@ public class CardRepositoryImpl implements CardRepository {
     }
 
     @Override
+    public void updateCardOwner(Card card, User user) {
+        setUsernameToCard(user, card.getId());
+    }
+
+    @Override
     public int acquirePackage(User user) {
         UserRepository userRepository = new UserRepositoryImpl();
 
@@ -155,6 +160,21 @@ public class CardRepositoryImpl implements CardRepository {
         } else {
             //zu wenig karten-ids übergeben
             return 2;
+        }
+    }
+
+    @Override
+    public void deleteCardFromDeck(Card card) {
+        String sql = """
+                update cards set deck = ? where id=?
+                """;
+        try {
+            PreparedStatement statement = DataBase.getConnection().prepareStatement(sql);
+            statement.setInt(1, 0);
+            statement.setString(2, card.getId());
+            statement.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 

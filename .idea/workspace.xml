@@ -4,21 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_02">
+    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_03">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/gameengine/battlelogic/BattleLogicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/gameengine/battlelogic/BattleLogicServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/gameengine/repository/GameEngineRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/gameengine/repository/GameEngineRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/gameengine/service/GameEngineService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/gameengine/service/GameEngineServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/gameengine/GameEngineController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/gameengine/GameEngineService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/curlResponse.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlResponse.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/curlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlScript.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/stats/StatsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/stats/StatsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/stats/StatsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/stats/StatsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -93,7 +96,7 @@
       <recent name="if21b151.application.user.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Monsters And Spells V">
+  <component name="RunManager" selected="JUnit.UserRepositoryTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="if21b151.Main" />
       <module name="Monsters And Spells V" />
@@ -131,22 +134,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardRepositoryTest.testCountPackages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Monsters And Spells V" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="if21b151.application.card.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.card.repository" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.card.repository.CardRepositoryTest" />
-      <option name="METHOD_NAME" value="testCountPackages" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CardServiceTest.testCreatePackage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
@@ -163,13 +150,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monsters And Spells V" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="if21b151.application.user.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="if21b151.application.user.repository" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.user.repository.UserRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRepositoryTest" />
         <item itemvalue="JUnit.All in Monsters And Spells V" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CardRepositoryTest.testAddNewPackage" />
         <item itemvalue="JUnit.CardServiceTest.testCreatePackage" />
-        <item itemvalue="JUnit.CardRepositoryTest.testCountPackages" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +183,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672579350025</updated>
-      <workItem from="1672579352333" duration="53894000" />
+      <workItem from="1672579352333" duration="62710000" />
     </task>
     <task id="LOCAL-00001" summary="2023_01_01">
       <created>1672598740658</created>
@@ -218,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672696079997</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2023_01_03">
+      <created>1672739705352</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672739705352</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +247,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2023_01_01" />
     <MESSAGE value="2023_01_02" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023_01_02" />
+    <MESSAGE value="2023_01_03" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023_01_03" />
   </component>
 </project>

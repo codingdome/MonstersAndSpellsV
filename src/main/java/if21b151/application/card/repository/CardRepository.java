@@ -8,16 +8,20 @@ import java.util.List;
 
 public interface CardRepository {
 
-    public int countPackages();
+    int countPackages();
 
-    public void addNewPackage(CardPackage cardPackage);
+    void addNewPackage(CardPackage cardPackage);
 
-    public int acquirePackage(User user);
+    int acquirePackage(User user);
 
-    public List<Card> getAllCardsByUsername(String username);
+    List<Card> getAllCardsByUsername(String username);
 
-    public List<Card> getUserDeckCards(String username);
+    List<Card> getUserDeckCards(String username);
 
-    public int configureDeck(User user, List<String> cardIDs);
+    int configureDeck(User user, List<String> cardIDs);
+
+    void updateCardOwner(Card card, User user);
+
+    void deleteCardFromDeck(Card card);
 }
 

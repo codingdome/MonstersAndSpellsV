@@ -2,6 +2,7 @@ package if21b151;
 
 import if21b151.httpserver.server.Server;
 import if21b151.httpserver.service.cards.CardService;
+import if21b151.httpserver.service.gameengine.GameEngineService;
 import if21b151.httpserver.service.sessions.SessionService;
 import if21b151.httpserver.service.stats.StatsService;
 import if21b151.httpserver.service.users.UserService;
@@ -32,6 +33,7 @@ public class Main {
         router.addService("/transactions", new CardService());
         router.addService("/cards", new CardService());
         router.addService("/deck", new CardService());
+        router.addService("/battles", new GameEngineService());
         return router;
     }
 }

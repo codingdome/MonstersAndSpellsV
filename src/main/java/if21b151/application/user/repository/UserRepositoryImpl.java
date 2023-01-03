@@ -109,7 +109,6 @@ public class UserRepositoryImpl implements UserRepository {
         try {
             PreparedStatement statement = DataBase.getConnection().prepareStatement(sql);
             ResultSet results = statement.executeQuery();
-
             while (results.next()) {
                 Stats stats = new Stats();
                 stats.setUsername(results.getString(1));
@@ -120,9 +119,7 @@ public class UserRepositoryImpl implements UserRepository {
                 stats.setLost(results.getInt(6));
                 scoreboard.add(stats);
             }
-
             return scoreboard;
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
