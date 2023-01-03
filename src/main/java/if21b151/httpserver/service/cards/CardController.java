@@ -15,6 +15,7 @@ import if21b151.utility.PrintService;
 import if21b151.utility.PrintServiceImpl;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -129,6 +130,46 @@ public class CardController extends Controller {
             String userDeckCardsData = this.getObjectMapper().writeValueAsString(userDeckCards);
 
             return new Response(HttpStatus.CREATED, ContentType.JSON, userDeckCardsData);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public Response configureDeck(Request request) {
+
+        if (request.getHeaderMap().getHeader("Authorization") == null) {
+            return new Response(HttpStatus.BAD_REQUEST, ContentType.JSON, "{ \"message\" : \"No token found!\" }");
+        }
+
+        try {
+            printService.consoleLog("server", "Configure deck of user");
+
+            User user = new User();
+            user.setToken(request.getHeaderMap().getHeader("Authorization"));
+            String[] tokenSplit = user.getToken().split(" ");
+            String username = tokenSplit[1].split("-")[0];
+            user.setUsername(username);
+
+            String[] cardIds = this.getObjectMapper().readValue(request.getBody(), String[].class);
+            List<String> cardIdsList = Arrays.asList(cardIds);
+
+            if (cardIdsList.size() != 4) {
+                return new Response(HttpStatus.BAD_REQUEST, ContentType.JSON, "{ \"message\" : \"Not enough IDs!\" }");
+            }
+
+            String userCardIdsData = this.getObjectMapper().writeValueAsString(cardIdsList);
+
+            switch (cardService.configureDeck(user, cardIdsList)) {
+                case 0:
+                    return new Response(HttpStatus.CREATED, ContentType.JSON, userCardIdsData);
+                case 1:
+                    return new Response(HttpStatus.BAD_REQUEST, ContentType.JSON, "{ \"message\" : \"Deck already configured\" }");
+                case 2:
+                    return new Response(HttpStatus.BAD_REQUEST, ContentType.JSON, "{ \"message\" : \"Not enough IDs!\" }");
+            }
 
         } catch (Exception e) {
             e.printStackTrace();

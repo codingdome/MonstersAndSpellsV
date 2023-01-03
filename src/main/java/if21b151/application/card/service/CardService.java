@@ -20,4 +20,6 @@ public interface CardService {
 
     public List<Card> getUserDeck(User user);
 
+    public int configureDeck(User user, List<String> cardIDs);
+
 }

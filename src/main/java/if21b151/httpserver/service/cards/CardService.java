@@ -39,6 +39,8 @@ public class CardService implements Service {
 
             return this.cardController.createPackage(request);
 
+        } else if (request.getMethod() == Method.PUT) {
+            return this.cardController.configureDeck(request);
         }
         return new Response(HttpStatus.BAD_REQUEST, ContentType.JSON, "[]");
     }

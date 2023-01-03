@@ -12,6 +12,8 @@ import if21b151.httpserver.server.Response;
 import if21b151.utility.PrintService;
 import if21b151.utility.PrintServiceImpl;
 
+import java.util.List;
+
 public class StatsController extends Controller {
     UserService userService;
     PrintService printService;
@@ -36,5 +38,30 @@ public class StatsController extends Controller {
             e.printStackTrace();
             return new Response(HttpStatus.INTERNAL_SERVER_ERROR, ContentType.JSON, "{ \"message\" : \"Internal Server Error\" }");
         }
+    }
+
+    public Response getScoreboard(Request request) {
+
+        User user = new User();
+        user.setToken(request.getHeaderMap().getHeader("Authorization"));
+        String[] tokenSplit = user.getToken().split(" ");
+        String username = tokenSplit[1].split("-")[0];
+        user.setUsername(username);
+
+        if (userService.get(user) == null) {
+            return new Response(HttpStatus.UNAUTHORIZED, ContentType.JSON, "{ \"message\" : \"Unauthorized / wrong token.\" }");
+        }
+        
+        try {
+            printService.consoleLog("server", "Send scoreboard");
+            List<Stats> scoreboard = userService.getScoreboard();
+            String scoreboardData = this.getObjectMapper().writeValueAsString(scoreboard);
+            return new Response(HttpStatus.OK, ContentType.JSON, scoreboardData);
+
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+            return new Response(HttpStatus.INTERNAL_SERVER_ERROR, ContentType.JSON, "{ \"message\" : \"Internal Server Error\" }");
+        }
+
     }
 }

@@ -44,6 +44,10 @@ public class CardServiceImpl implements CardService {
         return cardRepository.getUserDeckCards(user.getUsername());
     }
 
+    @Override
+    public int configureDeck(User user, List<String> cardIDs) {
+        return cardRepository.configureDeck(user, cardIDs);
+    }
 
     @Override
     public Card getPlotCard() {

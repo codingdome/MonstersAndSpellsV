@@ -9,13 +9,16 @@
       <change beforePath="$PROJECT_DIR$/src/curlResponse.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlResponse.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/curlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlScript.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards/CardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/stats/StatsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/stats/StatsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/stats/StatsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/stats/StatsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +181,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672579350025</updated>
-      <workItem from="1672579352333" duration="47720000" />
+      <workItem from="1672579352333" duration="53894000" />
     </task>
     <task id="LOCAL-00001" summary="2023_01_01">
       <created>1672598740658</created>
@@ -208,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672674976587</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2023_01_02">
+      <created>1672696079997</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672696079997</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -7,6 +7,8 @@ import if21b151.database.DataBase;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserRepositoryImpl implements UserRepository {
 
@@ -96,6 +98,34 @@ public class UserRepositoryImpl implements UserRepository {
             throw new RuntimeException(e);
         }
         return null;
+    }
+
+    @Override
+    public List<Stats> getScoreboard() {
+        List<Stats> scoreboard = new ArrayList<>();
+        String sql = """
+                select * from stats where username!='admin' order by elo desc 
+                """;
+        try {
+            PreparedStatement statement = DataBase.getConnection().prepareStatement(sql);
+            ResultSet results = statement.executeQuery();
+
+            while (results.next()) {
+                Stats stats = new Stats();
+                stats.setUsername(results.getString(1));
+                stats.setName(results.getString(2));
+                stats.setElo(results.getInt(3));
+                stats.setCoins(results.getInt(4));
+                stats.setWon(results.getInt(5));
+                stats.setLost(results.getInt(6));
+                scoreboard.add(stats);
+            }
+
+            return scoreboard;
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

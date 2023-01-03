@@ -3,6 +3,8 @@ package if21b151.application.user.service;
 import if21b151.application.user.model.Stats;
 import if21b151.application.user.model.User;
 
+import java.util.List;
+
 public interface UserService {
     public int create(User user);
 
@@ -11,6 +13,8 @@ public interface UserService {
     public User get(User user);
 
     public Stats getStats(String token);
+
+    public List<Stats> getScoreboard();
 
     public int update(User user);
 }

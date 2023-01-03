@@ -5,6 +5,8 @@ import if21b151.application.user.model.User;
 import if21b151.application.user.repository.UserRepository;
 import if21b151.application.user.repository.UserRepositoryImpl;
 
+import java.util.List;
+
 public class UserServiceImpl implements UserService {
 
     UserRepository userRepository = new UserRepositoryImpl();
@@ -29,6 +31,11 @@ public class UserServiceImpl implements UserService {
     public Stats getStats(String token) {
         String[] tokenSplit = token.split(" ");
         return userRepository.getStats(tokenSplit[1].split("-")[0]);
+    }
+
+    @Override
+    public List<Stats> getScoreboard() {
+        return userRepository.getScoreboard();
     }
 
     @Override

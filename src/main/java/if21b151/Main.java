@@ -27,6 +27,7 @@ public class Main {
         router.addService("/users/kienboec", new UserService());
         router.addService("/users/altenhof", new UserService());
         router.addService("/stats", new StatsService());
+        router.addService("/score", new StatsService());
         router.addService("/packages", new CardService());
         router.addService("/transactions", new CardService());
         router.addService("/cards", new CardService());
