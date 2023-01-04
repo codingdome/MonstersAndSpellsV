@@ -1,56 +1,6 @@
 {
-  "playerOne": {
-    "username": "altenhof",
-    "password": "markus",
-    "name": "Altenhofer",
-    "bio": "me codin...",
-    "img": ":-D",
-    "token": "Basic altenhof-mtcgToken",
-    "stats": {
-      "username": "",
-      "name": "",
-      "elo": 900,
-      "coins": 20,
-      "won": 0,
-      "lost": 2
-    }
-  },
-  "playerTwo": {
-    "username": "kienboec",
-    "password": "daniel",
-    "name": "Kienboeck",
-    "bio": "me playin...",
-    "img": ":-)",
-    "token": "Basic kienboec-mtcgToken",
-    "stats": {
-      "username": "",
-      "name": "",
-      "elo": 1060,
-      "coins": 20,
-      "won": 2,
-      "lost": 0
-    }
-  },
-  "deckPlayerOne": [],
-  "deckPlayerTwo": [],
-  "winningCards": [],
-  "winner": {
-    "username": "kienboec",
-    "password": "daniel",
-    "name": "Kienboeck",
-    "bio": "me playin...",
-    "img": ":-)",
-    "token": "Basic kienboec-mtcgToken",
-    "stats": {
-      "username": "",
-      "name": "",
-      "elo": 1060,
-      "coins": 20,
-      "won": 2,
-      "lost": 0
-    }
-  },
-  "battleLog": [
-    "START"
-  ]
+  "Id": "6cd85277-4590-49d4-b0cf-ba0a921faad0",
+  "CardToTrade": "1cb6ab86-bdb2-47e5-b6e4-68c5ab389334",
+  "Type": "monster",
+  "MinimumDamage": 15
 }

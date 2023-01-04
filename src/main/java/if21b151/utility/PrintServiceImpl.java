@@ -1,6 +1,7 @@
 package if21b151.utility;
 
 import if21b151.application.card.model.Card;
+import if21b151.application.trading.model.Trade;
 import if21b151.application.user.model.User;
 
 public class PrintServiceImpl implements PrintService {
@@ -53,6 +54,23 @@ public class PrintServiceImpl implements PrintService {
 
         for (final Object[] row : table) {
             System.out.format("%-40s%-15s%-15s%-15s%-15s%-15s%-15s%-10s%-10s%n", row);
+        }
+    }
+
+    @Override
+    public void printTrade(Trade trade) {
+        System.out.println(ANSI_MAGENTA + "PRINTTRADE: " + trade.getId().toUpperCase() + ANSI_RESET);
+        if (trade == null) {
+            return;
+        }
+        final Object[][] table = new String[2][];
+        table[0] = new String[]{"username", "id", "card to trade", "type", "min damage"};
+
+        table[1] = new String[]{trade.getUsername(), trade.getId(), trade.getCardToTrade(), trade.getType(), Double.toString(trade.getMinimumDamage())};
+
+
+        for (final Object[] row : table) {
+            System.out.format("%-20s%-50s%-50s%-15s%-10s%n", row);
         }
     }
 }

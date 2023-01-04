@@ -1,6 +1,7 @@
 package if21b151.utility;
 
 import if21b151.application.card.model.Card;
+import if21b151.application.trading.model.Trade;
 import if21b151.application.user.model.User;
 
 public interface PrintService {
@@ -15,4 +16,6 @@ public interface PrintService {
     public void printUser(User user);
 
     public void printCard(Card card);
+
+    public void printTrade(Trade trade);
 }
