@@ -5,18 +5,24 @@ import if21b151.application.card.model.ElementType;
 import if21b151.application.card.model.MonsterType;
 import if21b151.application.card.service.CardService;
 import if21b151.application.card.service.CardServiceImpl;
+import if21b151.utility.PrintService;
+import if21b151.utility.PrintServiceImpl;
 
 import java.util.Objects;
 
 public class BattleLogicServiceImpl implements BattleLogicService {
     CardService cardService = new CardServiceImpl();
+    PrintService printService = new PrintServiceImpl();
 
     @Override
     public Card fightTwoCards(Card a, Card b) {
         Card winnerCard = initFight(a, b);
         if (winnerCard != null) {
+            printService.consoleLog("server", "Winning Card:");
+            printService.printCard(winnerCard);
             return winnerCard;
         } else {
+            printService.consoleLog("server", "Fight Cards: Plot!");
             return cardService.getPlotCard();
         }
     }
@@ -106,7 +112,6 @@ public class BattleLogicServiceImpl implements BattleLogicService {
     }
 
     private Card calculatedDamage(Card strong, Card weak) {
-        System.out.println("calculated strong damage: " + strong.getDamage() * 2 + " weak damage: " + weak.getDamage() / 2);
         if ((strong.getDamage() * 2) > (weak.getDamage() / 2)) {
             return strong;
         } else if ((strong.getDamage() * 2) == (weak.getDamage() / 2)) {

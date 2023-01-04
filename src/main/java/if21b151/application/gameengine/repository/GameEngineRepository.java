@@ -8,5 +8,5 @@ public interface GameEngineRepository {
 
     public void addUserToWaitingList(User user);
 
-    public String getLatestUsernameWaiting();
+    public User getLatestUserWaiting();
 }

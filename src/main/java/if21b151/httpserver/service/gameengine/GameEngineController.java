@@ -1,6 +1,7 @@
 package if21b151.httpserver.service.gameengine;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import if21b151.application.gameengine.model.BattleLog;
 import if21b151.application.gameengine.service.GameEngineService;
 import if21b151.application.user.model.User;
 import if21b151.application.user.service.UserService;
@@ -25,22 +26,31 @@ public class GameEngineController extends Controller {
 
     public Response registerForBattle(Request request) {
 
-        System.out.println("register for battle");
+        printService.consoleLog("server", "Register for battle");
 
         User user = new User();
         user.setToken(request.getHeaderMap().getHeader("Authorization"));
         String[] tokenSplit = user.getToken().split(" ");
         String username = tokenSplit[1].split("-")[0];
         user.setUsername(username);
-        printService.printUser(user);
         User fullUser = userService.get(user);
+        printService.consoleLog("server", "Registered player:");
         printService.printUser(fullUser);
 
-        return switch (gameEngineService.registerForBattle(fullUser)) {
-            case 0 -> new Response(HttpStatus.ACCEPTED, ContentType.JSON, "Battle finished");
-            case 1 -> new Response(HttpStatus.ACCEPTED, ContentType.JSON, "User registered for battle");
-            default -> new Response(HttpStatus.INTERNAL_SERVER_ERROR, ContentType.JSON, "internal server error");
-        };
+        try {
+            BattleLog battleLog = gameEngineService.registerForBattle(fullUser);
+            String battleLogJSON = this.getObjectMapper().writeValueAsString(battleLog);
+
+            if (battleLog.getWinner() == null) {
+                return new Response(HttpStatus.OK, ContentType.JSON, "User added to lobby");
+            } else {
+                return new Response(HttpStatus.OK, ContentType.JSON, battleLogJSON);
+            }
+
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+            return new Response(HttpStatus.INTERNAL_SERVER_ERROR, ContentType.JSON, "{ \"message\" : \"Internal Server Error\" }");
+        }
     }
 
 }
