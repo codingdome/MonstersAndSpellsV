@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_04">
-      <change afterPath="$PROJECT_DIR$/src/fastCurlScript.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/tradings/TradingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/tradings/TradingService.java" afterDir="false" />
+    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_05">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/curlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlScript.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository/CardRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/service/CardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/repository/TradeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/repository/TradeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/repository/TradeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/repository/TradeRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/service/TradeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/service/TradeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/service/TradeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/service/TradeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/utils/RequestBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/utils/RequestBuilderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fastCurlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/fastCurlScript.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +170,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672579350025</updated>
-      <workItem from="1672579352333" duration="89994000" />
+      <workItem from="1672579352333" duration="90394000" />
     </task>
     <task id="LOCAL-00001" summary="2023_01_01">
       <created>1672598740658</created>
@@ -247,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672872918898</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2023_01_05">
+      <created>1672912446876</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672912446876</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +264,7 @@
     <MESSAGE value="2023_01_02" />
     <MESSAGE value="2023_01_03" />
     <MESSAGE value="2023_01_04" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023_01_04" />
+    <MESSAGE value="2023_01_05" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023_01_05" />
   </component>
 </project>
