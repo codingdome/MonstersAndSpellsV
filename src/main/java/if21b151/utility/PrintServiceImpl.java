@@ -14,6 +14,9 @@ public class PrintServiceImpl implements PrintService {
 
             case "server":
                 System.out.println(ANSI_MAGENTA + position.toUpperCase() + ANSI_RESET + " operation: " + message);
+
+            case "message":
+                System.out.println(ANSI_GREEN + position.toUpperCase() + ANSI_RESET + " " + message);
             default:
                 break;
         }
@@ -36,6 +39,30 @@ public class PrintServiceImpl implements PrintService {
     @Override
     public void printCard(Card card) {
         System.out.println(ANSI_MAGENTA + "PRINTCARD: " + card.getName().toUpperCase() + ANSI_RESET);
+        if (card == null) {
+            return;
+        }
+        final Object[][] table = new String[2][];
+        table[0] = new String[]{"id", "name", "username", "type", "damage", "elementType", "monsterType", "deck", "trade"};
+
+        String monsterType;
+        if (card.getType().equals("spell")) {
+            monsterType = "-";
+        } else {
+            monsterType = card.getMonsterType().toString();
+        }
+
+        table[1] = new String[]{card.getId(), card.getName(), card.getUsername(), card.getType(), Double.toString(card.getDamage()), card.getElementType().toString(), card.getMonsterType().toString(), Integer.toString(card.getDeck()), Integer.toString(card.getTrade())};
+
+
+        for (final Object[] row : table) {
+            System.out.format("%-40s%-15s%-15s%-15s%-15s%-15s%-15s%-10s%-10s%n", row);
+        }
+    }
+
+    @Override
+    public void printWinningCard(Card card) {
+        System.out.println(ANSI_BLUE + "WINNINGCARD: " + card.getName().toUpperCase() + ANSI_RESET);
         if (card == null) {
             return;
         }

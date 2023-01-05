@@ -129,7 +129,7 @@ public class TradeRepositoryImpl implements TradeRepository {
         return 0;
     }
 
-    private Trade getTradeByID(String tradeID) {
+    public Trade getTradeByID(String tradeID) {
         String sql = """
                 select * from trades where id=?
                 """;

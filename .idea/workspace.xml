@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_05">
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/gameengine/battlelogic/BattleLogicServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/gameengine/repository/GameEngineRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/curlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlScript.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fastCurlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/fastCurlScript.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/gameengine/battlelogic/BattleLogicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/gameengine/battlelogic/BattleLogicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/repository/TradeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/repository/TradeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/repository/TradeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/repository/TradeRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/if21b151/application/trading/service/TradeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/trading/service/TradeServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -72,30 +78,17 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="if21b151.application.gameengine.repository" />
+      <recent name="if21b151.application.gameengine.battlelogic" />
       <recent name="if21b151.application.trading.service" />
       <recent name="if21b151.application.trading.model" />
       <recent name="if21b151.application.card.repository" />
-      <recent name="if21b151.application.card.service" />
-      <recent name="if21b151.application.card.model" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="if21b151.application.user.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="if21b151.Main" />
-      <module name="Monsters And Spells V" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="if21b151.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in Monsters And Spells V">
     <configuration name="All in Monsters And Spells V" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <option name="PACKAGE_NAME" value="" />
@@ -104,49 +97,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RequestBuilderTest.testBuildRequestFromGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameEngineRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="if21b151.httpserver.utils.*" />
+          <option name="PATTERN" value="if21b151.application.gameengine.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="if21b151.httpserver.utils" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.httpserver.utils.RequestBuilderTest" />
-      <option name="METHOD_NAME" value="testBuildRequestFromGet" />
+      <option name="PACKAGE_NAME" value="if21b151.application.gameengine.repository" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.gameengine.repository.GameEngineRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameEngineRepositoryTest.addUserToWaitingList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monsters And Spells V" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="if21b151.application.gameengine.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="if21b151.application.gameengine.repository" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.gameengine.repository.GameEngineRepositoryTest" />
+      <option name="METHOD_NAME" value="addUserToWaitingList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TradeServiceTest.addTrade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameEngineRepositoryTest.checkIfUserIsWaiting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="if21b151.application.trading.service.*" />
+          <option name="PATTERN" value="if21b151.application.gameengine.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.trading.service" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.trading.service.TradeServiceTest" />
-      <option name="METHOD_NAME" value="addTrade" />
+      <option name="PACKAGE_NAME" value="if21b151.application.gameengine.repository" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.gameengine.repository.GameEngineRepositoryTest" />
+      <option name="METHOD_NAME" value="checkIfUserIsWaiting" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TradeServiceTest.getTrades" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameEngineRepositoryTest.getLatestUserWaiting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="if21b151.application.trading.service.*" />
+          <option name="PATTERN" value="if21b151.application.gameengine.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.trading.service" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.trading.service.TradeServiceTest" />
-      <option name="METHOD_NAME" value="getTrades" />
+      <option name="PACKAGE_NAME" value="if21b151.application.gameengine.repository" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.application.gameengine.repository.GameEngineRepositoryTest" />
+      <option name="METHOD_NAME" value="getLatestUserWaiting" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.RequestBuilderTest.testBuildRequestFromGet" />
         <item itemvalue="JUnit.All in Monsters And Spells V" />
-        <item itemvalue="JUnit.TradeServiceTest.getTrades" />
-        <item itemvalue="JUnit.TradeServiceTest.addTrade" />
+        <item itemvalue="JUnit.GameEngineRepositoryTest.addUserToWaitingList" />
+        <item itemvalue="JUnit.GameEngineRepositoryTest" />
+        <item itemvalue="JUnit.GameEngineRepositoryTest.getLatestUserWaiting" />
+        <item itemvalue="JUnit.GameEngineRepositoryTest.checkIfUserIsWaiting" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +178,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672579350025</updated>
-      <workItem from="1672579352333" duration="90394000" />
+      <workItem from="1672579352333" duration="98335000" />
     </task>
     <task id="LOCAL-00001" summary="2023_01_01">
       <created>1672598740658</created>
@@ -242,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672912446876</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="2023_01_05">
+      <created>1672912986643</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672912986643</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

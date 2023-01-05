@@ -18,11 +18,11 @@ public class BattleLogicServiceImpl implements BattleLogicService {
     public Card fightTwoCards(Card a, Card b) {
         Card winnerCard = initFight(a, b);
         if (winnerCard != null) {
-            printService.consoleLog("server", "Winning Card:");
-            printService.printCard(winnerCard);
+//            printService.consoleLog("server", "Winning Card:");
+//            printService.printCard(winnerCard);
             return winnerCard;
         } else {
-            printService.consoleLog("server", "Fight Cards: Plot!");
+//            printService.consoleLog("server", "Fight Cards: Plot!");
             return cardService.getPlotCard();
         }
     }

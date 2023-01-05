@@ -13,4 +13,6 @@ public interface TradeRepository {
     int deleteTradeFromDB(User user, String tradeID);
 
     int tradeDB(User user, String tradeID, String cardID);
+
+    Trade getTradeByID(String tradeID);
 }

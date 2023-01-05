@@ -17,5 +17,7 @@ public interface PrintService {
 
     public void printCard(Card card);
 
+    public void printWinningCard(Card card);
+
     public void printTrade(Trade trade);
 }
