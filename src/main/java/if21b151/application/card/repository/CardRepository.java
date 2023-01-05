@@ -23,5 +23,7 @@ public interface CardRepository {
     void updateCardOwner(Card card, User user);
 
     void deleteCardFromDeck(Card card);
+
+    Card getCardByID(String id);
 }
 

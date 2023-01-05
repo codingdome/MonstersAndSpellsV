@@ -178,6 +178,25 @@ public class CardRepositoryImpl implements CardRepository {
         }
     }
 
+    @Override
+    public Card getCardByID(String id) {
+        String sql = """
+                select * from cards where id=?
+                """;
+        try {
+            PreparedStatement statement = DataBase.getConnection().prepareStatement(sql);
+            statement.setString(1, id);
+            ResultSet results = statement.executeQuery();
+            while (results.next()) {
+                Card card = new Card(results.getString(1), results.getString(2), results.getString(3), results.getInt(4));
+                return card;
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return null;
+    }
+
     private void setUsernameToCard(User user, String id) {
         String sql = """
                 update cards set username=? where id=?

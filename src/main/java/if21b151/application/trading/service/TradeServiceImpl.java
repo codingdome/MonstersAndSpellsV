@@ -19,4 +19,14 @@ public class TradeServiceImpl implements TradeService {
     public void addTrade(User user, Trade trade) {
         tradeRepository.addTradeToDB(user, trade);
     }
+
+    @Override
+    public int deleteTrade(User user, String tradeID) {
+        return tradeRepository.deleteTradeFromDB(user, tradeID);
+    }
+
+    @Override
+    public int trade(User user, String tradeID, String cardID) {
+        return tradeRepository.tradeDB(user, tradeID, cardID);
+    }
 }

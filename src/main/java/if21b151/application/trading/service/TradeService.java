@@ -9,4 +9,8 @@ public interface TradeService {
     List<Trade> getTrades();
 
     void addTrade(User user, Trade trade);
+
+    int deleteTrade(User user, String tradeID);
+
+    int trade(User user, String tradeID, String cardID);
 }

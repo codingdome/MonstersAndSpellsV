@@ -26,4 +26,6 @@ public interface CardService {
 
     public void deleteCardFromDeck(Card card);
 
+    public Card getCardByID(String id);
+
 }

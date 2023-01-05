@@ -39,5 +39,8 @@ public class RequestBuilderTest {
         assertEquals("/echo", request.getServiceRoute());
         assertEquals("mehr", request.getPathParts().get(1));
         assertEquals(8, request.getHeaderMap().getContentLength());
+
+        request.setBody("{\"Id\": \"6cd85277-4590-49d4-b0cf-ba0a921faad0\", \"CardToTrade\": \"1cb6ab86-bdb2-47e5-b6e4-68c5ab389334\", \"Type\": \"monster\", \"MinimumDamage\": 15}");
+        System.out.println(request.getBody());
     }
 }

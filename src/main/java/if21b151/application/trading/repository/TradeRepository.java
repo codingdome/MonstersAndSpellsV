@@ -9,4 +9,8 @@ public interface TradeRepository {
     List<Trade> getTradesFromDB();
 
     void addTradeToDB(User user, Trade trade);
+
+    int deleteTradeFromDB(User user, String tradeID);
+
+    int tradeDB(User user, String tradeID, String cardID);
 }

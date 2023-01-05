@@ -60,6 +60,11 @@ public class CardServiceImpl implements CardService {
     }
 
     @Override
+    public Card getCardByID(String id) {
+        return cardRepository.getCardByID(id);
+    }
+
+    @Override
     public Card getPlotCard() {
         return new Card("0", "0", "0", "0", 0, ElementType.WATER, MonsterType.ELVE, 0, 0);
     }

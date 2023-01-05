@@ -5,6 +5,7 @@ import if21b151.httpserver.service.cards.CardService;
 import if21b151.httpserver.service.gameengine.GameEngineService;
 import if21b151.httpserver.service.sessions.SessionService;
 import if21b151.httpserver.service.stats.StatsService;
+import if21b151.httpserver.service.tradings.TradingService;
 import if21b151.httpserver.service.users.UserService;
 import if21b151.httpserver.utils.Router;
 
@@ -34,6 +35,7 @@ public class Main {
         router.addService("/cards", new CardService());
         router.addService("/deck", new CardService());
         router.addService("/battles", new GameEngineService());
+        router.addService("/tradings", new TradingService());
         return router;
     }
 }
