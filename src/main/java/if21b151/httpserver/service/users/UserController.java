@@ -30,10 +30,10 @@ public class UserController extends Controller {
             switch (this.userService.create(user)) {
                 case 0:
                     printService.consoleLog("server", "Could not create - User already exists.");
-                    return new Response(HttpStatus.BAD_REQUEST, ContentType.JSON, "User already exists!");
+                    return new Response(HttpStatus.BAD_REQUEST, ContentType.JSON, "{ \"message\" : \"User already exists!\" }");
                 case 1:
                     printService.consoleLog("server", "New user created");
-                    return new Response(HttpStatus.CREATED, ContentType.JSON, "New User created -- " + userDataJSON);
+                    return new Response(HttpStatus.CREATED, ContentType.JSON, userDataJSON);
             }
             return new Response(HttpStatus.NOT_FOUND, ContentType.JSON, "No DB Connection -- " + userDataJSON);
         } catch (JsonProcessingException e) {

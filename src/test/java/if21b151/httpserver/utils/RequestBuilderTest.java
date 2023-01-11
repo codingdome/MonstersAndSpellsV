@@ -1,10 +1,14 @@
 package if21b151.httpserver.utils;
 
+import if21b151.httpserver.http.Method;
+import if21b151.httpserver.server.HeaderMap;
 import if21b151.httpserver.server.Request;
 import if21b151.utility.PrintService;
 import if21b151.utility.PrintServiceImpl;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestClassOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -17,30 +21,39 @@ import static org.junit.jupiter.api.Assertions.*;
 @ExtendWith(MockitoExtension.class)
 public class RequestBuilderTest {
     PrintService printService;
+    RequestBuilder requestBuilder;
 
     @BeforeEach
     void initServices() {
         printService = new PrintServiceImpl();
+        requestBuilder = new RequestBuilder();
     }
 
     @Test
     void testBuildRequestFromGet() throws Exception {
         printService.consoleLog("unitTest", "RequestBuilderTest: Test Build Request From Get");
-        BufferedReader reader = mock(BufferedReader.class);
-        when(reader.readLine()).thenReturn("GET /echo/mehr?p=23 HTTP/1.1",
-                "Content-Type: text/plain",
-                "Content-Length: 8",
-                "Accept: */*",
-                "",
-                "{'id':1}");
+        HeaderMap headerMap = new HeaderMap();
+        headerMap.ingest("Authorization: token");
+        headerMap.ingest("Content-Type: application/json");
+        Request request = new Request();
+        request.setMethod(Method.POST);
+        request.setUrlContent("http://localhost:12345/users");
+        request.setHeaderMap(headerMap);
 
-        Request request = new RequestBuilder().buildRequest(reader);
-        assertEquals("/echo/mehr", request.getPathname());
-        assertEquals("/echo", request.getServiceRoute());
-        assertEquals("mehr", request.getPathParts().get(1));
-        assertEquals(8, request.getHeaderMap().getContentLength());
 
-        request.setBody("{\"Id\": \"6cd85277-4590-49d4-b0cf-ba0a921faad0\", \"CardToTrade\": \"1cb6ab86-bdb2-47e5-b6e4-68c5ab389334\", \"Type\": \"monster\", \"MinimumDamage\": 15}");
-        System.out.println(request.getBody());
+        request.setBody("{\"username\":\"kienboec\", \"password\":\"daniel\"}");
+
+        printService.printRequest(request);
+    }
+
+    @Test
+    void buildRequestManual() {
+        printService.consoleLog("unitTest", "RequestBuilderTest: Test Build Request Manual");
+        Request request = requestBuilder.buildRequestManual(Method.POST, "url/ordner", "token", "contentType");
+        request.setBody("body");
+        Assertions.assertEquals("url/ordner", request.getUrlContent());
+        Assertions.assertEquals("ordner", request.getPathParts().get(1));
+        Assertions.assertEquals("body", request.getBody());
+        printService.printRequest(request);
     }
 }

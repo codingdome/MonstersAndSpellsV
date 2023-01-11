@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_05">
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/gameengine/battlelogic/BattleLogicServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/gameengine/repository/GameEngineRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/rollback/RollbackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/service/sessions/SessionServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/service/stats/StatsServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/service/users/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/gameengine/battlelogic/BattleLogicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/gameengine/battlelogic/BattleLogicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/repository/TradeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/repository/TradeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/repository/TradeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/trading/repository/TradeRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlScript.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fastCurlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/fastCurlScript.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/utils/RequestBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/utils/RequestBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/if21b151/application/trading/service/TradeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/if21b151/application/trading/service/TradeServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/utils/RequestBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/utils/RequestBuilderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +65,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.file-colors"
+    "settings.editor.selected.configurable": "reference.idesettings.debugger.capture"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -74,87 +80,96 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/if21b151/utility" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="if21b151" />
+      <recent name="if21b151.httpserver.service.stats" />
+      <recent name="if21b151.httpserver.service.sessions" />
+      <recent name="if21b151.httpserver.service.users" />
       <recent name="if21b151.application.gameengine.repository" />
-      <recent name="if21b151.application.gameengine.battlelogic" />
-      <recent name="if21b151.application.trading.service" />
-      <recent name="if21b151.application.trading.model" />
-      <recent name="if21b151.application.card.repository" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="if21b151.application.user.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Monsters And Spells V">
-    <configuration name="All in Monsters And Spells V" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Monsters And Spells V" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameEngineRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MainTest">
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="if21b151.application.gameengine.repository.*" />
+          <option name="PATTERN" value="if21b151.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.gameengine.repository" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.gameengine.repository.GameEngineRepositoryTest" />
+      <option name="PACKAGE_NAME" value="if21b151" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.MainTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameEngineRepositoryTest.addUserToWaitingList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.configureDeckKienboec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="if21b151.application.gameengine.repository.*" />
+          <option name="PATTERN" value="if21b151.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.gameengine.repository" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.gameengine.repository.GameEngineRepositoryTest" />
-      <option name="METHOD_NAME" value="addUserToWaitingList" />
+      <option name="PACKAGE_NAME" value="if21b151" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.MainTest" />
+      <option name="METHOD_NAME" value="configureDeckKienboec" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameEngineRepositoryTest.checkIfUserIsWaiting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.reConfigureDeckAltenhof" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="if21b151.application.gameengine.repository.*" />
+          <option name="PATTERN" value="if21b151.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.gameengine.repository" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.gameengine.repository.GameEngineRepositoryTest" />
-      <option name="METHOD_NAME" value="checkIfUserIsWaiting" />
+      <option name="PACKAGE_NAME" value="if21b151" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.MainTest" />
+      <option name="METHOD_NAME" value="reConfigureDeckAltenhof" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameEngineRepositoryTest.getLatestUserWaiting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.showOldConfiguredDeckAltenhof" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="if21b151.application.gameengine.repository.*" />
+          <option name="PATTERN" value="if21b151.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="if21b151.application.gameengine.repository" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.application.gameengine.repository.GameEngineRepositoryTest" />
-      <option name="METHOD_NAME" value="getLatestUserWaiting" />
+      <option name="PACKAGE_NAME" value="if21b151" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.MainTest" />
+      <option name="METHOD_NAME" value="showOldConfiguredDeckAltenhof" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.showUnconfiguredDeckAltenhof" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monsters And Spells V" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="if21b151.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="if21b151" />
+      <option name="MAIN_CLASS_NAME" value="if21b151.MainTest" />
+      <option name="METHOD_NAME" value="showUnconfiguredDeckAltenhof" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in Monsters And Spells V" />
-        <item itemvalue="JUnit.GameEngineRepositoryTest.addUserToWaitingList" />
-        <item itemvalue="JUnit.GameEngineRepositoryTest" />
-        <item itemvalue="JUnit.GameEngineRepositoryTest.getLatestUserWaiting" />
-        <item itemvalue="JUnit.GameEngineRepositoryTest.checkIfUserIsWaiting" />
+        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="JUnit.MainTest.showOldConfiguredDeckAltenhof" />
+        <item itemvalue="JUnit.MainTest.reConfigureDeckAltenhof" />
+        <item itemvalue="JUnit.MainTest.configureDeckKienboec" />
+        <item itemvalue="JUnit.MainTest.showUnconfiguredDeckAltenhof" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +193,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672579350025</updated>
-      <workItem from="1672579352333" duration="98335000" />
+      <workItem from="1672579352333" duration="99413000" />
+      <workItem from="1673265230779" duration="25411000" />
     </task>
     <task id="LOCAL-00001" summary="2023_01_01">
       <created>1672598740658</created>
@@ -257,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672912986643</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2023_01_05">
+      <created>1672928800687</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672928800687</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,5 +304,9 @@
     <MESSAGE value="2023_01_04" />
     <MESSAGE value="2023_01_05" />
     <option name="LAST_COMMIT_MESSAGE" value="2023_01_05" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

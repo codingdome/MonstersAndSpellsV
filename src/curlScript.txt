@@ -130,8 +130,8 @@ curl -X POST http://localhost:12345/battles --header "Authorization: Basic alten
 
 ********** 18 **********
 18) Stats
-curl -X GET http://localhost:10001/stats --header "Authorization: Basic kienboec-mtcgToken"
-curl -X GET http://localhost:10001/stats --header "Authorization: Basic altenhof-mtcgToken"
+curl -X GET http://localhost:12345/stats --header "Authorization: Basic kienboec-mtcgToken"
+curl -X GET http://localhost:12345/stats --header "Authorization: Basic altenhof-mtcgToken"
 
 ********** 19 **********
 19) scoreboard

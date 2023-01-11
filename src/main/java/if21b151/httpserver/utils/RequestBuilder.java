@@ -1,6 +1,7 @@
 package if21b151.httpserver.utils;
 
 import if21b151.httpserver.http.Method;
+import if21b151.httpserver.server.HeaderMap;
 import if21b151.httpserver.server.Request;
 
 import java.io.BufferedReader;
@@ -32,6 +33,18 @@ public class RequestBuilder {
             }
         }
 
+        return request;
+    }
+
+    public Request buildRequestManual(Method method, String url, String authorization, String contentType) {
+        HeaderMap headerMap = new HeaderMap();
+        headerMap.ingest("Authorization: " + authorization);
+        headerMap.ingest("Content-Type: " + contentType);
+        Request request = new Request();
+        request.setMethod(method);
+        request.setUrlContent(url);
+        request.setHeaderMap(headerMap);
+//        request.setBody(body);
         return request;
     }
 
