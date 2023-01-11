@@ -532,4 +532,367 @@ class MainTest {
         Assertions.assertEquals(201, response.getStatus());
         printService.printResponse(response);
     }
+
+    @Test
+    @Order(42)
+    void configureWithOnlyThreeCards() {
+        printService.consoleLog("message", "configure deck by altenhof with only 3 cards --> should fail");
+        Request request = requestBuilder.buildRequestManual(Method.PUT, "/deck", "Basic altenhof-mtcgToken", "application/json");
+        request.setBody("[\"d6e9c720-9b5a-40c7-a6b2-bc34752e3463\", \"d60e23cf-2238-4d49-844f-c7589ee5342e\", \"02a9c76e-b17d-427f-9240-2dd49b0d3bfd\"]");
+        printService.printRequest(request);
+        Response response = cardService.handleRequest(request);
+        Assertions.assertEquals(400, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(43)
+    void showConfiguredDeckKienboec2() {
+        printService.consoleLog("message", "show unconfig deck by kienboec");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/deck", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = cardService.handleRequest(request);
+        Assertions.assertEquals(201, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(44)
+    void showConfiguredDeckAltenhof2() {
+        printService.consoleLog("message", "show unconfig deck by altenhof");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/deck", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = cardService.handleRequest(request);
+        Assertions.assertEquals(201, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(45)
+    void getUserDataKienboec() {
+        printService.consoleLog("message", "show user data kienboec");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/users/kienboec", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = userService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(46)
+    void getUserDataAltenhof() {
+        printService.consoleLog("message", "show user data altenhof");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/users/altenhof", "Basic altenhof-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = userService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(47)
+    void putUserDataKienboec() {
+        printService.consoleLog("message", "put user data kienboec");
+        Request request = requestBuilder.buildRequestManual(Method.PUT, "/users/kienboec", "Basic kienboec-mtcgToken", "application/json");
+        request.setBody("{\"name\": \"Kienboeck\",  \"bio\": \"me playin...\", \"img\": \":-)\"}");
+        printService.printRequest(request);
+        Response response = userService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(48)
+    void putUserDataAltenhof() {
+        printService.consoleLog("message", "put user data altenhof");
+        Request request = requestBuilder.buildRequestManual(Method.PUT, "/users/altenhof", "Basic altenhof-mtcgToken", "application/json");
+        request.setBody("{\"name\": \"Altenhofer\", \"bio\": \"me codin...\",  \"img\": \":-D\"}");
+        printService.printRequest(request);
+        Response response = userService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(49)
+    void getUserDataKienboec2() {
+        printService.consoleLog("message", "show user data kienboec");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/users/kienboec", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = userService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(50)
+    void getUserDataAltenhof2() {
+        printService.consoleLog("message", "show user data altenhof");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/users/altenhof", "Basic altenhof-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = userService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(51)
+    void getUserDataAltenhofWrongToken() {
+        printService.consoleLog("message", "show user data altenhof --> should fail, wrong token");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/users/altenhof", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = userService.handleRequest(request);
+        Assertions.assertEquals(401, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(52)
+    void getUserDataKienboecWrongToken() {
+        printService.consoleLog("message", "show user data kienboec --> should fail, wrong token");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/users/kienboec", "Basic altenhof-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = userService.handleRequest(request);
+        Assertions.assertEquals(401, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(53)
+    void getStatsKienboec() {
+        printService.consoleLog("message", "show stats kienboec");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/stats", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = statsService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(54)
+    void getStatsAtlenhof() {
+        printService.consoleLog("message", "show stats altenhof");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/stats", "Basic altenhof-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = statsService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(55)
+    void getScoreboard() {
+        printService.consoleLog("message", "show scoreboard");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/score", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = statsService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(56)
+    void startBattleKienboec() {
+        printService.consoleLog("message", "kienboec -> start battle");
+        Request request = requestBuilder.buildRequestManual(Method.POST, "/battles", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = gameEngineService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(57)
+    void startBattleAltenhof() {
+        printService.consoleLog("message", "altenhof -> start battle");
+        Request request = requestBuilder.buildRequestManual(Method.POST, "/battles", "Basic altenhof-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = gameEngineService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(58)
+    void getStatsKienboecAfterBattle() {
+        printService.consoleLog("message", "show stats kienboec");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/stats", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = statsService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(59)
+    void getStatsAtlenhofAfterBattle() {
+        printService.consoleLog("message", "show stats altenhof");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/stats", "Basic altenhof-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = statsService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(60)
+    void getScoreboardAfterBattle() {
+        printService.consoleLog("message", "show scoreboard");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/score", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = statsService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(61)
+    void getTradesKienboec() {
+        printService.consoleLog("message", "get trades kienboec");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/tradings", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = tradingService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(62)
+    void postTradeKienboec() {
+        printService.consoleLog("message", "post new trade kienboec");
+        Request request = requestBuilder.buildRequestManual(Method.POST, "/tradings", "Basic kienboec-mtcgToken", "application/json");
+        request.setBody("{\"id\": \"6cd85277-4590-49d4-b0cf-ba0a921faad0\", \"cardToTrade\": \"1cb6ab86-bdb2-47e5-b6e4-68c5ab389334\", \"type\": \"monster\", \"minimumDamage\": 15}");
+        printService.printRequest(request);
+        Response response = tradingService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(63)
+    void getTradesKienboec2() {
+        printService.consoleLog("message", "get trades kienboec #1");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/tradings", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = tradingService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(64)
+    void getTradesAltenhof() {
+        printService.consoleLog("message", "get trades altenhof");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/tradings", "Basic altenhof-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = tradingService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(65)
+    void deleteTradeKienboec() {
+        printService.consoleLog("message", "delete trade kienboec");
+        Request request = requestBuilder.buildRequestManual(Method.DELETE, "/tradings/6cd85277-4590-49d4-b0cf-ba0a921faad0", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = tradingService.handleRequest(request);
+        Assertions.assertEquals(401, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(66)
+    void getTradesKienboec3() {
+        printService.consoleLog("message", "get trades kienboec #1");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/tradings", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = tradingService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(67)
+    void postTradeKienboecAgain() {
+        printService.consoleLog("message", "post new trade kienboec");
+        Request request = requestBuilder.buildRequestManual(Method.POST, "/tradings", "Basic kienboec-mtcgToken", "application/json");
+        request.setBody("{\"id\": \"6cd85277-4590-49d4-b0cf-ba0a921faad0\", \"cardToTrade\": \"1cb6ab86-bdb2-47e5-b6e4-68c5ab389334\", \"type\": \"monster\", \"minimumDamage\": 15}");
+        printService.printRequest(request);
+        Response response = tradingService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(68)
+    void getTradesKienboec4() {
+        printService.consoleLog("message", "get trades kienboec #1");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/tradings", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = tradingService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(69)
+    void getTradesAltenhof2() {
+        printService.consoleLog("message", "get trades altenhof #1");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/tradings", "Basic altenhof-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = tradingService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(70)
+    void tryToTradeKienboec() {
+        printService.consoleLog("message", "try to trade kienboec with itself --> should fail");
+        Request request = requestBuilder.buildRequestManual(Method.POST, "/tradings/6cd85277-4590-49d4-b0cf-ba0a921faad0", "Basic kienboec-mtcgToken", "application/json");
+        request.setBody("\"4ec8b269-0dfa-4f97-809a-2c63fe2a0025\"");
+        printService.printRequest(request);
+        Response response = tradingService.handleRequest(request);
+        Assertions.assertEquals(400, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(71)
+    void tryToTradeAltenhof() {
+        printService.consoleLog("message", "try to trade altenhof");
+        Request request = requestBuilder.buildRequestManual(Method.POST, "/tradings/6cd85277-4590-49d4-b0cf-ba0a921faad0", "Basic altenhof-mtcgToken", "application/json");
+        request.setBody("\"951e886a-0fbf-425d-8df5-af2ee4830d85\"");
+        printService.printRequest(request);
+        Response response = tradingService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(72)
+    void getTradesKienboec5() {
+        printService.consoleLog("message", "get trades kienboec #2");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/tradings", "Basic kienboec-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = tradingService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+    }
+
+    @Test
+    @Order(73)
+    void getTradesAltenhof3() {
+        printService.consoleLog("message", "get trades altenhof #2");
+        Request request = requestBuilder.buildRequestManual(Method.GET, "/tradings", "Basic altenhof-mtcgToken", "");
+        printService.printRequest(request);
+        Response response = tradingService.handleRequest(request);
+        Assertions.assertEquals(200, response.getStatus());
+        printService.printResponse(response);
+
+        Request rollback = requestBuilder.buildRequestManual(Method.POST, "/rollback", "Basic admin-mtcgToken", "");
+        rollbackService.handleRequest(rollback);
+    }
+
 }

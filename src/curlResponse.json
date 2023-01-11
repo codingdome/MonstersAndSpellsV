@@ -1,6 +1,207 @@
 {
-  "Id": "6cd85277-4590-49d4-b0cf-ba0a921faad0",
-  "CardToTrade": "1cb6ab86-bdb2-47e5-b6e4-68c5ab389334",
-  "Type": "monster",
-  "MinimumDamage": 15
+  "playerOne": {
+    "username": "altenhof",
+    "password": "markus",
+    "name": "Altenhofer",
+    "bio": "me codin...",
+    "img": ":-D",
+    "token": "Basic altenhof-mtcgToken",
+    "stats": {
+      "username": "",
+      "name": "",
+      "elo": 1030,
+      "coins": 20,
+      "won": 1,
+      "lost": 0
+    }
+  },
+  "playerTwo": {
+    "username": "kienboec",
+    "password": "daniel",
+    "name": "Kienboeck",
+    "bio": "me playin...",
+    "img": ":-)",
+    "token": "Basic kienboec-mtcgToken",
+    "stats": {
+      "username": "",
+      "name": "",
+      "elo": 950,
+      "coins": 20,
+      "won": 0,
+      "lost": 1
+    }
+  },
+  "deckPlayerOne": [
+    {
+      "id": "aa9999a0-734c-49c6-8f4a-651864b14e62",
+      "name": "RegularSpell",
+      "username": "altenhof",
+      "type": "spell",
+      "damage": 50.0,
+      "elementType": "REGULAR",
+      "monsterType": "SPELL",
+      "deck": 0,
+      "trade": 0
+    },
+    {
+      "id": "d6e9c720-9b5a-40c7-a6b2-bc34752e3463",
+      "name": "Knight",
+      "username": "altenhof",
+      "type": "monster",
+      "damage": 20.0,
+      "elementType": "FIRE",
+      "monsterType": "KNIGHT",
+      "deck": 0,
+      "trade": 0
+    },
+    {
+      "id": "d60e23cf-2238-4d49-844f-c7589ee5342e",
+      "name": "WaterSpell",
+      "username": "altenhof",
+      "type": "spell",
+      "damage": 22.0,
+      "elementType": "WATER",
+      "monsterType": "SPELL",
+      "deck": 0,
+      "trade": 0
+    },
+    {
+      "id": "02a9c76e-b17d-427f-9240-2dd49b0d3bfd",
+      "name": "RegularSpell",
+      "username": "altenhof",
+      "type": "spell",
+      "damage": 45.0,
+      "elementType": "REGULAR",
+      "monsterType": "SPELL",
+      "deck": 0,
+      "trade": 0
+    }
+  ],
+  "deckPlayerTwo": [
+    {
+      "id": "845f0dc7-37d0-426e-994e-43fc3ac83c08",
+      "name": "WaterGoblin",
+      "username": "kienboec",
+      "type": "monster",
+      "damage": 10.0,
+      "elementType": "WATER",
+      "monsterType": "GOBLIN",
+      "deck": 0,
+      "trade": 0
+    },
+    {
+      "id": "99f8f8dc-e25e-4a95-aa2c-782823f36e2a",
+      "name": "Dragon",
+      "username": "kienboec",
+      "type": "monster",
+      "damage": 50.0,
+      "elementType": "FIRE",
+      "monsterType": "DRAGON",
+      "deck": 0,
+      "trade": 0
+    },
+    {
+      "id": "e85e3976-7c86-4d06-9a80-641c2019a79f",
+      "name": "WaterSpell",
+      "username": "kienboec",
+      "type": "spell",
+      "damage": 20.0,
+      "elementType": "WATER",
+      "monsterType": "SPELL",
+      "deck": 0,
+      "trade": 0
+    },
+    {
+      "id": "171f6076-4eb5-4a7d-b3f2-2d650cc3d237",
+      "name": "RegularSpell",
+      "username": "kienboec",
+      "type": "spell",
+      "damage": 28.0,
+      "elementType": "REGULAR",
+      "monsterType": "SPELL",
+      "deck": 0,
+      "trade": 0
+    }
+  ],
+  "winningCards": [
+    {
+      "id": "aa9999a0-734c-49c6-8f4a-651864b14e62",
+      "name": "RegularSpell",
+      "username": "altenhof",
+      "type": "spell",
+      "damage": 50.0,
+      "elementType": "REGULAR",
+      "monsterType": "SPELL",
+      "deck": 0,
+      "trade": 0
+    },
+    {
+      "id": "99f8f8dc-e25e-4a95-aa2c-782823f36e2a",
+      "name": "Dragon",
+      "username": "kienboec",
+      "type": "monster",
+      "damage": 50.0,
+      "elementType": "FIRE",
+      "monsterType": "DRAGON",
+      "deck": 0,
+      "trade": 0
+    },
+    {
+      "id": "d60e23cf-2238-4d49-844f-c7589ee5342e",
+      "name": "WaterSpell",
+      "username": "altenhof",
+      "type": "spell",
+      "damage": 22.0,
+      "elementType": "WATER",
+      "monsterType": "SPELL",
+      "deck": 0,
+      "trade": 0
+    },
+    {
+      "id": "02a9c76e-b17d-427f-9240-2dd49b0d3bfd",
+      "name": "RegularSpell",
+      "username": "altenhof",
+      "type": "spell",
+      "damage": 45.0,
+      "elementType": "REGULAR",
+      "monsterType": "SPELL",
+      "deck": 0,
+      "trade": 0
+    }
+  ],
+  "winner": {
+    "username": "altenhof",
+    "password": "markus",
+    "name": "Altenhofer",
+    "bio": "me codin...",
+    "img": ":-D",
+    "token": "Basic altenhof-mtcgToken",
+    "stats": {
+      "username": "",
+      "name": "",
+      "elo": 1030,
+      "coins": 20,
+      "won": 1,
+      "lost": 0
+    }
+  },
+  "battleLog": [
+    "START",
+    "ROUND-1",
+    "CARD1: RegularSpell CARD2: WaterGoblin",
+    "WINNING CARD-RegularSpell aa9999a0-734c-49c6-8f4a-651864b14e62",
+    "ROUND-WINNER: altenhof",
+    "ROUND-2",
+    "CARD1: Knight CARD2: Dragon",
+    "WINNING CARD-Dragon 99f8f8dc-e25e-4a95-aa2c-782823f36e2a",
+    "ROUND-WINNER: kienboec",
+    "ROUND-3",
+    "CARD1: WaterSpell CARD2: WaterSpell",
+    "WINNING CARD-WaterSpell d60e23cf-2238-4d49-844f-c7589ee5342e",
+    "ROUND-WINNER: altenhof",
+    "ROUND-4",
+    "CARD1: RegularSpell CARD2: RegularSpell",
+    "WINNING CARD-RegularSpell 02a9c76e-b17d-427f-9240-2dd49b0d3bfd",
+    "ROUND-WINNER: altenhof"
+  ]
 }

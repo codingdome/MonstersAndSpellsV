@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_05">
-      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/rollback/RollbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/service/sessions/SessionServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/service/stats/StatsServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/service/users/UserServiceTest.java" afterDir="false" />
+    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/curlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlScript.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fastCurlScript.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/fastCurlScript.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/server/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/users/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/utils/RequestBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/httpserver/utils/RequestBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/utility/PrintServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/utils/RequestBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/if21b151/httpserver/utils/RequestBuilderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/curlResponse.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/curlResponse.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/if21b151/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/if21b151/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +83,15 @@
       <recent name="if21b151.application.user.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest">
+  <component name="RunManager" selected="JUnit.All in Monsters And Spells V">
+    <configuration name="All in Monsters And Spells V" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monsters And Spells V" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
@@ -111,7 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.configureDeckKienboec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.getTradesAltenhof2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
@@ -121,13 +117,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="if21b151" />
       <option name="MAIN_CLASS_NAME" value="if21b151.MainTest" />
-      <option name="METHOD_NAME" value="configureDeckKienboec" />
+      <option name="METHOD_NAME" value="getTradesAltenhof2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.reConfigureDeckAltenhof" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.tryToTradeAltenhof" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
@@ -137,13 +133,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="if21b151" />
       <option name="MAIN_CLASS_NAME" value="if21b151.MainTest" />
-      <option name="METHOD_NAME" value="reConfigureDeckAltenhof" />
+      <option name="METHOD_NAME" value="tryToTradeAltenhof" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.showOldConfiguredDeckAltenhof" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.tryToTradeKienboec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <extension name="coverage">
         <pattern>
@@ -153,23 +149,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="if21b151" />
       <option name="MAIN_CLASS_NAME" value="if21b151.MainTest" />
-      <option name="METHOD_NAME" value="showOldConfiguredDeckAltenhof" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.showUnconfiguredDeckAltenhof" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Monsters And Spells V" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="if21b151.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="if21b151" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.MainTest" />
-      <option name="METHOD_NAME" value="showUnconfiguredDeckAltenhof" />
+      <option name="METHOD_NAME" value="tryToTradeKienboec" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Monsters And Spells V" />
         <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="JUnit.MainTest.showOldConfiguredDeckAltenhof" />
-        <item itemvalue="JUnit.MainTest.reConfigureDeckAltenhof" />
-        <item itemvalue="JUnit.MainTest.configureDeckKienboec" />
-        <item itemvalue="JUnit.MainTest.showUnconfiguredDeckAltenhof" />
+        <item itemvalue="JUnit.MainTest.tryToTradeAltenhof" />
+        <item itemvalue="JUnit.MainTest.tryToTradeKienboec" />
+        <item itemvalue="JUnit.MainTest.getTradesAltenhof2" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +174,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672579350025</updated>
       <workItem from="1672579352333" duration="99413000" />
-      <workItem from="1673265230779" duration="25411000" />
+      <workItem from="1673265230779" duration="29899000" />
     </task>
     <task id="LOCAL-00001" summary="2023_01_01">
       <created>1672598740658</created>
@@ -280,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672928800687</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2023_01_11">
+      <created>1673443885022</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673443885023</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +290,8 @@
     <MESSAGE value="2023_01_03" />
     <MESSAGE value="2023_01_04" />
     <MESSAGE value="2023_01_05" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023_01_05" />
+    <MESSAGE value="2023_01_11" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023_01_11" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
