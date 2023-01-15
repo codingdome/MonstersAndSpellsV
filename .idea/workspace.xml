@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_15">
+      <change afterPath="$PROJECT_DIR$/readme_src/dbTables.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/if21b151/database/initDatabase.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -177,7 +179,7 @@
       <updated>1672579350025</updated>
       <workItem from="1672579352333" duration="99413000" />
       <workItem from="1673265230779" duration="34152000" />
-      <workItem from="1673720953139" duration="9489000" />
+      <workItem from="1673720953139" duration="11626000" />
     </task>
     <task id="LOCAL-00001" summary="2023_01_01">
       <created>1672598740658</created>
@@ -312,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673791508119</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="2023_01_15">
+      <created>1673794016291</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1673794016291</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

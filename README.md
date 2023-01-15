@@ -1,5 +1,13 @@
+*©Dominik Englert, 2023<br>
+if21b151<br>
+Technikum Wien<br>
+Software Engineering 1*
+
+
 # MonstersAndSpellsV
 ## Protocol
+Willkommen bei MonsterAndSpells V, dem wohl beeindruckensten Kartenspiel-Server aller Zeiten.
+
 
 ![title](readme_src/main.jpeg)
 
@@ -47,10 +55,28 @@ In der DB dient die Tabelle "battles" als Lobby. Wenn sich ein User für ein Bat
 Falls ja: Wird ein Battle mit eben diesem User gestartet. Falls nein, wird der user in die Lobby und damit in diese Tabelle eingetragen.
 
 ## Setup
+Für eine reibungslose Benutzung müssen zwei Hauptschritte eingehalten werden. Darunter zum einen das Erstellen und Initialisieren der Datenbank. 
+Zum anderen der Start des Servers. Um die Funktionalität sicherzustellen, empfehle ich einmal alle unitTests laufen zu lassen.
 ### Database
+1. Die Datenbank muss mit dem folgenden File initialisiert werden.
+*src/main/java/if21b151/database/initDatabase.sql*
+
+2. Sobald die Datenbank läuft muss in der Class DataBase der richtige Pfad zur Datenbank eingegeben werden.
+
+![title](readme_src/dbTables.jpeg)
+
 ### Server
+1. Um den Server zur starten, können Sie in der Main Class zum einen einen Port definieren und müssen dann im folgenden
+2. die Main Funktion starten. Der Server läuft auf dem von ihnen angegeben Port
 
 ## Usage
+Der Server akzeptiert eine große Reihe an Requests. Eine komplette Sammlung aller möglichen Befehle finden Sie unter
+*src/curlScript.txt*
+
 
 ## Unit Tests
+Während der Entwicklung der Applikation habe ich zusammenhängend zu jedem Schritt direkt alle nötigen Test-Cases geschrieben.
+Darunter einfache Tests um die Funktion einzelner **Models** und deren Constructors zu testen, sowie die Tests der **Services** und 
+verschiedenen Optionen verschiedene Models zu händeln. 
+Der **Main Test** stellt einen übergeordneten Test dar und testet alle im Curl-Script gegebenen Funktionen. 
 
