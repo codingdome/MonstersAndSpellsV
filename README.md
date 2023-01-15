@@ -1,8 +1,8 @@
 *©Dominik Englert, 2023<br>
 if21b151<br>
 Technikum Wien<br>
-Software Engineering 1*
-
+Software Engineering 1<br>
+time-spent: ~ 200 h*
 
 # MonstersAndSpellsV
 ## Protocol
