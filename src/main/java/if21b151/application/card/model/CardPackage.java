@@ -4,15 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CardPackage {
-    public int price = 5;
     public List<Card> packageCards = new ArrayList<>(5);
 
     public void addToPackage(Card card) {
         this.packageCards.add(card);
-    }
-
-    public int getPrice() {
-        return price;
     }
 
     public List<Card> getPackageCards() {

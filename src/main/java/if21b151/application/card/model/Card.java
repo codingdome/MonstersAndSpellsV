@@ -98,56 +98,37 @@ public class Card {
     }
 
     private MonsterType stringToMonsterType(String monsterTypeString) {
-        switch (monsterTypeString) {
-            case "Goblin":
-                return MonsterType.GOBLIN;
-            case "Dragon":
-                return MonsterType.DRAGON;
-            case "Wizzard":
-                return MonsterType.WIZZARD;
-            case "Knight":
-                return MonsterType.KNIGHT;
-            case "Kraken":
-                return MonsterType.KRAKEN;
-            case "Troll":
-                return MonsterType.TROLL;
-            case "Ork":
-                return MonsterType.ORK;
-            case "Elve":
-                return MonsterType.ELVE;
-        }
-        return MonsterType.SPELL;
+        return switch (monsterTypeString) {
+            case "Goblin" -> MonsterType.GOBLIN;
+            case "Dragon" -> MonsterType.DRAGON;
+            case "Wizzard" -> MonsterType.WIZZARD;
+            case "Knight" -> MonsterType.KNIGHT;
+            case "Kraken" -> MonsterType.KRAKEN;
+            case "Troll" -> MonsterType.TROLL;
+            case "Ork" -> MonsterType.ORK;
+            case "Elve" -> MonsterType.ELVE;
+            default -> MonsterType.SPELL;
+        };
     }
 
     private ElementType stringToElementType(String elementTypeString) {
-        switch (elementTypeString) {
-            case "Water":
-                return ElementType.WATER;
-            case "Fire":
-                return ElementType.FIRE;
-            case "Regular":
-                return ElementType.REGULAR;
-        }
-        return null;
+        return switch (elementTypeString) {
+            case "Water" -> ElementType.WATER;
+            case "Fire" -> ElementType.FIRE;
+            case "Regular" -> ElementType.REGULAR;
+            default -> null;
+        };
     }
 
     private ElementType getRandomElementType() {
         Random r = new Random();
         int randomElementInt = r.nextInt(3);
 
-        ElementType randomElement;
-        switch (randomElementInt) {
-            case 0:
-                randomElement = ElementType.FIRE;
-                break;
-            case 1:
-                randomElement = ElementType.REGULAR;
-                break;
-            default:
-                randomElement = ElementType.WATER;
-                break;
-        }
-        return randomElement;
+        return switch (randomElementInt) {
+            case 0 -> ElementType.FIRE;
+            case 1 -> ElementType.REGULAR;
+            default -> ElementType.WATER;
+        };
     }
 
     /*getter/setter*/
@@ -188,25 +169,25 @@ public class Card {
         return damage;
     }
 
-    public void setDamage(double damage) {
-        this.damage = damage;
-    }
+//    public void setDamage(double damage) {
+//        this.damage = damage;
+//    }
 
     public ElementType getElementType() {
         return elementType;
     }
 
-    public void setElementType(ElementType elementType) {
-        this.elementType = elementType;
-    }
+//    public void setElementType(ElementType elementType) {
+//        this.elementType = elementType;
+//    }
 
     public MonsterType getMonsterType() {
         return monsterType;
     }
 
-    public void setMonsterType(MonsterType monsterType) {
-        this.monsterType = monsterType;
-    }
+//    public void setMonsterType(MonsterType monsterType) {
+//        this.monsterType = monsterType;
+//    }
 
     public int getDeck() {
         return deck;

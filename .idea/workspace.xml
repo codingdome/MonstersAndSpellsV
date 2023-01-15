@@ -7,6 +7,10 @@
     <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_15">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/CardPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/card/model/CardPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/if21b151/application/user/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +90,19 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in Monsters And Spells V">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="if21b151.Main" />
+      <module name="Monsters And Spells V" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="if21b151.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in Monsters And Spells V" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monsters And Spells V" />
       <option name="PACKAGE_NAME" value="" />
@@ -105,22 +122,6 @@
       <option name="PACKAGE_NAME" value="if21b151" />
       <option name="MAIN_CLASS_NAME" value="if21b151.MainTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.getTradesAltenhof2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Monsters And Spells V" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="if21b151.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="if21b151" />
-      <option name="MAIN_CLASS_NAME" value="if21b151.MainTest" />
-      <option name="METHOD_NAME" value="getTradesAltenhof2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,10 +161,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in Monsters And Spells V" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.tryToTradeAltenhof" />
         <item itemvalue="JUnit.MainTest.tryToTradeKienboec" />
-        <item itemvalue="JUnit.MainTest.getTradesAltenhof2" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +178,7 @@
       <updated>1672579350025</updated>
       <workItem from="1672579352333" duration="99413000" />
       <workItem from="1673265230779" duration="34152000" />
-      <workItem from="1673720953139" duration="12021000" />
+      <workItem from="1673720953139" duration="12666000" />
     </task>
     <task id="LOCAL-00001" summary="2023_01_01">
       <created>1672598740658</created>
@@ -326,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673796264101</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="2023_01_15">
+      <created>1673796656408</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1673796656408</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

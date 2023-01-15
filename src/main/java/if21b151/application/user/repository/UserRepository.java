@@ -7,18 +7,18 @@ import java.util.List;
 
 public interface UserRepository {
 
-    public int create(User user);
+    int create(User user);
 
-    public int login(User user);
+    int login(User user);
 
-    public User get(User user);
+    User get(User user);
 
-    public User updateInformation(User user);
+    User updateInformation(User user);
 
-    public User updateStats(User user);
+    User updateStats(User user);
 
-    public Stats getStats(String username);
+    Stats getStats(String username);
 
-    public List<Stats> getScoreboard();
+    List<Stats> getScoreboard();
 
 }

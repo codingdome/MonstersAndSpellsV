@@ -80,3 +80,8 @@ Darunter einfache Tests um die Funktion einzelner **Models** und deren Construct
 verschiedenen Optionen verschiedene Models zu händeln. 
 Der **Main Test** stellt einen übergeordneten Test dar und testet alle im Curl-Script gegebenen Funktionen. 
 
+### unique feature
+PrintService Utilitys:
+1. Log all Server Actions
+2. Log all Unit Tests 
+3. Log Model-Data

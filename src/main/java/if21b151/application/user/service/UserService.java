@@ -6,15 +6,15 @@ import if21b151.application.user.model.User;
 import java.util.List;
 
 public interface UserService {
-    public int create(User user);
+    int create(User user);
 
-    public int login(User user);
+    int login(User user);
 
-    public User get(User user);
+    User get(User user);
 
-    public Stats getStats(String token);
+    Stats getStats(String token);
 
-    public List<Stats> getScoreboard();
+    List<Stats> getScoreboard();
 
-    public int update(User user);
+    int update(User user);
 }
