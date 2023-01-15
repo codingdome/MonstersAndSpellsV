@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_11">
+    <list default="true" id="db4a35a5-c0ff-4cdd-95bf-8e3e90bcde9b" name="Changes" comment="2023_01_15">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_src/architecture.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_src/demoRequest.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme_src/main.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROTOCOL.md" beforeDir="false" afterPath="$PROJECT_DIR$/PROTOCOL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protocol.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +48,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/dominikenglert/IdeaProjects/Monsters And Spells V/src/main/java/if21b151/application/card/repository",
+    "last_opened_file_path": "/Users/dominikenglert/IdeaProjects/Monsters And Spells V/readme_src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,16 +62,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/readme_src" />
       <recent name="$PROJECT_DIR$/src/main/java/if21b151/application/card/repository" />
       <recent name="$PROJECT_DIR$/src/main/java/if21b151/application/card/service" />
       <recent name="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service/cards" />
       <recent name="$PROJECT_DIR$/src/main/java/if21b151/application/card/model" />
-      <recent name="$PROJECT_DIR$/src/main/java/if21b151/httpserver/service" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/readme_src" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/if21b151/utility" />
       <recent name="$PROJECT_DIR$/src" />
@@ -176,7 +181,7 @@
       <updated>1672579350025</updated>
       <workItem from="1672579352333" duration="99413000" />
       <workItem from="1673265230779" duration="34152000" />
-      <workItem from="1673720953139" duration="1632000" />
+      <workItem from="1673720953139" duration="6833000" />
     </task>
     <task id="LOCAL-00001" summary="2023_01_01">
       <created>1672598740658</created>
@@ -283,7 +288,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673452345408</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="2023_01_15">
+      <created>1673774791247</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1673774791247</updated>
+    </task>
+    <task id="LOCAL-00017" summary="2023_01_15">
+      <created>1673775199149</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1673775199149</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +326,8 @@
     <MESSAGE value="2023_01_04" />
     <MESSAGE value="2023_01_05" />
     <MESSAGE value="2023_01_11" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023_01_11" />
+    <MESSAGE value="2023_01_15" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023_01_15" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
